@@ -1,0 +1,352 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "def greet(name):\n    #print(f\"Hello, {name}\")\n    return f\"Hello, {name}!\"\ndef squared(x):\n    return x**2\ngreeting = greet(\"Calle\")\nprint(greeting)\na = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "squared",
+        "kind": 2,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "def squared(x):\n    return x**2\ngreeting = greet(\"Calle\")\nprint(greeting)\na = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "random_int",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "random_int = random.randint(0,5)\nprint(random_int)\n'''\nmulti-\nline\ncomment\n'''\n# 1. Basic syntrax, kommentarer, printing\nprint(\"Hej, klassen!\") # Printa i Python\n# 2. Variabler och datatyper",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "x = 30               # int\ny = 3.14            # float\nname = \"Calle\"     # string\nis_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "y = 3.14            # float\nname = \"Calle\"     # string\nis_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "name = \"Calle\"     # string\nis_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "is_fun",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "is_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "z = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations\nprint(len(name))\nprint(name.upper())\nprint(name.lower())",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "a = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations\nprint(len(name))\nprint(name.upper())\nprint(name.lower())\nprint(\"  string with spaces  \".strip())\nmy_sentence_string = \"a string with multiple words\"",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "b = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations\nprint(len(name))\nprint(name.upper())\nprint(name.lower())\nprint(\"  string with spaces  \".strip())\nmy_sentence_string = \"a string with multiple words\"\nstring_list = my_sentence_string.split(\" \")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "my_sentence_string",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "my_sentence_string = \"a string with multiple words\"\nstring_list = my_sentence_string.split(\" \")\nprint(string_list)\n# 5 string formatting\nprint(f\"My name is {name} and I'm {x} years old\")\nprint(\"Pi is approximately {:.2f}\".format(y))\n# 6 Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")\nfruits.insert(1, \"strawberry\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "string_list",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "string_list = my_sentence_string.split(\" \")\nprint(string_list)\n# 5 string formatting\nprint(f\"My name is {name} and I'm {x} years old\")\nprint(\"Pi is approximately {:.2f}\".format(y))\n# 6 Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")\nfruits.insert(1, \"strawberry\")\nprint(fruits[2])",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "fruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")\nfruits.insert(1, \"strawberry\")\nprint(fruits[2])\nprint(fruits)\nfruits_string = \", \".join(fruits)\n# 7 Dictionaries\nperson_dict1 = { \"name\":\"Alice\", \"age\":30, \"city\":\"New York\" }\nprint(person_dict1[\"name\"])\nperson_dict1[\"job\"] = \"Developer\"",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "fruits_string",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "fruits_string = \", \".join(fruits)\n# 7 Dictionaries\nperson_dict1 = { \"name\":\"Alice\", \"age\":30, \"city\":\"New York\" }\nprint(person_dict1[\"name\"])\nperson_dict1[\"job\"] = \"Developer\"\nprint(person_dict1[\"job\"])\nperson_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "person_dict1",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "person_dict1 = { \"name\":\"Alice\", \"age\":30, \"city\":\"New York\" }\nprint(person_dict1[\"name\"])\nperson_dict1[\"job\"] = \"Developer\"\nprint(person_dict1[\"job\"])\nperson_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "person_dict1[\"job\"]",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "person_dict1[\"job\"] = \"Developer\"\nprint(person_dict1[\"job\"])\nperson_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets\nunique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "person_dict2",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "person_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets\nunique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)\nunique_fruits = set(fruits)\nprint(unique_fruits)",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "person_list",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "person_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets\nunique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)\nunique_fruits = set(fruits)\nprint(unique_fruits)\n# 9 Input från användare",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "unique_numbers",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "unique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)\nunique_fruits = set(fruits)\nprint(unique_fruits)\n# 9 Input från användare\n#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20\nif age >= 18:",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "unique_fruits",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "unique_fruits = set(fruits)\nprint(unique_fruits)\n# 9 Input från användare\n#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")\nelif age >= 13:",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "#username_input",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")\nelif age >= 13:\n    print(\"Du är tonåring\")\nelse:\n    print(\"Du är ett barn\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "age = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")\nelif age >= 13:\n    print(\"Du är tonåring\")\nelse:\n    print(\"Du är ett barn\")\n#if username_input == \"callefreme\":\n#    print(\"Hej det är ju calle!\")\n# 11 Loops",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "count = 0\nwhile count < 5:    # Vi loopar så länge (\"while\") villkoret är sant. \n    print(count)\n    count = count + 1\n# Oändlig while-loop\ncount = 1\nwhile True: # Detta villkor är alltid sant\n    print(f\"Count is now: {count}\")\n    count += 1\n    if (count >= 50):",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "count = 1\nwhile True: # Detta villkor är alltid sant\n    print(f\"Count is now: {count}\")\n    count += 1\n    if (count >= 50):\n        break   # Bryter ur loopen\nprint(\"Range loop\")\nfor i in range(5): # range(5) = [0,1,2,3,4]\n    print(i)\n# Använda listan eller strängens storlek/längd med range för att gå igenom listans index:",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "my_numbers",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "my_numbers = [5,2,1,25,61,21]\nfor i in range(len(my_numbers)):\n    print(f\"On index {i}, we have number: {my_numbers[i]}\") # Vi använder indexet 'i' för att komma åt det värde/siffra som ligger på det indexet\n# Vi kan också loopa igenom listan/strängens värden/element direkt:\nfor number in my_numbers:   # Variabeln 'number' kan egentligen heta vad som helst, men det hjälper om variabelnamnet är deskriptivt. 'number' ger en tydlig indikation på vad för typ av värde variabeln kommer vara.\n    print(f\"Number: {number}\")\n# Loopar med dictionaries\nmy_phonenumber_dict = {\"0725123112\":\"Calle\", \"0738519472\":\"Anna\", \"0703126123\":\"Bertil\"}\nfor key, item in my_phonenumber_dict.items():   # Loop-variablerna 'key' och 'item' hade kunnat heta t.ex. 'phone_number' och 'name' istället.\n    print(f\"Phone number {key} belongs to {item}\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "my_phonenumber_dict",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "my_phonenumber_dict = {\"0725123112\":\"Calle\", \"0738519472\":\"Anna\", \"0703126123\":\"Bertil\"}\nfor key, item in my_phonenumber_dict.items():   # Loop-variablerna 'key' och 'item' hade kunnat heta t.ex. 'phone_number' och 'name' istället.\n    print(f\"Phone number {key} belongs to {item}\")\n# Functions\ndef greet(name):\n    #print(f\"Hello, {name}\")\n    return f\"Hello, {name}!\"\ndef squared(x):\n    return x**2\ngreeting = greet(\"Calle\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "greeting",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "greeting = greet(\"Calle\")\nprint(greeting)\na = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "a = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "a_squared",
+        "kind": 5,
+        "importPath": "week1.intro",
+        "description": "week1.intro",
+        "peekOfCode": "a_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
+        "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "palindrome",
+        "kind": 2,
+        "importPath": "week1.upp1",
+        "description": "week1.upp1",
+        "peekOfCode": "def palindrome(number):\n    if (number == number[::-1]):\n        return print(\"Number is palindrome\")\n    else:\n        return print(\"Number is NOT palindrome!\")\nwrite_in=input(\"Write to test if number is palindrome :\")\nprint(palindrome(write_in))",
+        "detail": "week1.upp1",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "week2.libraryAppClasses",
+        "description": "week2.libraryAppClasses",
+        "peekOfCode": "class Book:\n    def __init__(self, title, author, year, genre, borrowed, pages):\n        self.title = title\n        self.author = author\n        self.year = year\n        self.genre = genre\n        self.is_borrowed = borrowed\n        self.pages = pages\n    def __str__(self):\n        return f\"{self.title} by {self.author} ({self.year})\"",
+        "detail": "week2.libraryAppClasses",
+        "documentation": {}
+    },
+    {
+        "label": "Library",
+        "kind": 6,
+        "importPath": "week2.libraryAppClasses",
+        "description": "week2.libraryAppClasses",
+        "peekOfCode": "class Library:\n    def __init__(self, books=None):\n        if books is None:\n            books = []\n        self.books = []\n    def add_book(self, book):\n        self.books.append(book)\n    def remove_book(self, book):\n        self.books.remove(book)\n    def find_book(self, book):",
+        "detail": "week2.libraryAppClasses",
+        "documentation": {}
+    },
+    {
+        "label": "bookObj",
+        "kind": 5,
+        "importPath": "week2.libraryAppClasses",
+        "description": "week2.libraryAppClasses",
+        "peekOfCode": "bookObj = Book(\"kucuk prens\", \"senol\", 1999, \"klasik\", False, 232)\nprint(bookObj)\nprint(bookObj.borrow())\nprint(bookObj.is_borrowed)\nbookObj.return_book()\nprint(bookObj.is_borrowed)\nlibrary = Library()\nlibrary.add_book(bookObj)\nlibrary.add_book(Book(\"1984\", \"George Orwell\", 1945, \"fact\", False, 312))\nlibrary.add_book(Book(\"Kill a mockingbird\", \"harper lee\", 1925, \"fictions\", False, 432))",
+        "detail": "week2.libraryAppClasses",
+        "documentation": {}
+    },
+    {
+        "label": "library",
+        "kind": 5,
+        "importPath": "week2.libraryAppClasses",
+        "description": "week2.libraryAppClasses",
+        "peekOfCode": "library = Library()\nlibrary.add_book(bookObj)\nlibrary.add_book(Book(\"1984\", \"George Orwell\", 1945, \"fact\", False, 312))\nlibrary.add_book(Book(\"Kill a mockingbird\", \"harper lee\", 1925, \"fictions\", False, 432))\nprint(library.books)\nprint(\"--- list --------\")\nprint(library.list_books())\nprint(\"--- list --------\")\nlist(map(print, library.list_books()))\nif book_to_borrow := library.find_book(\"1984\"):",
+        "detail": "week2.libraryAppClasses",
+        "documentation": {}
+    },
+    {
+        "label": "squared",
+        "kind": 2,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "def squared(x):\n    return x**2\na=3\na_squared= squared(a)\nprint(f\"{a} squared is: {a_squared}\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "week2.uppy",
+        "description": "week2.uppy",
+        "peekOfCode": "class Person:\n    def __init__(self,name,age):\n            self.name=name\n            self.age=age\n            self.hobbies=[]\n    def introduce(self):\n        return f\"Hi, my name is {self.name} and i am {self.age} years old.\"\n# Exempeluppgift del 2 - Attribut och metoder för Person\n# Utöka Person-klassen från föregående uppgift:\n# Lägg till ett attribut hobbies som en lista i konstruktorn.",
+        "detail": "week2.uppy",
+        "documentation": {}
+    }
+]
