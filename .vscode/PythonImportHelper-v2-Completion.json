@@ -9,11 +9,63 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
         "label": "reduce",
         "importPath": "functools",
         "description": "functools",
         "isExtraImport": true,
         "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -23,6 +75,38 @@
         "importPath": "itertools",
         "description": "itertools",
         "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Librarian",
+        "importPath": "users",
+        "description": "users",
+        "isExtraImport": true,
+        "detail": "users",
+        "documentation": {}
+    },
+    {
+        "label": "Loaner",
+        "importPath": "users",
+        "description": "users",
+        "isExtraImport": true,
+        "detail": "users",
         "documentation": {}
     },
     {
@@ -287,12 +371,246 @@
         "documentation": {}
     },
     {
-        "label": "palindrome",
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "arr1 = np.array([1, 2, 3, 4, 5])\narr2 = np.array([6, 7, 8, 9, 10])\nprint(f\"Array 1: {arr1}\")\nprint(f\"Array 2: {arr2}\")\nprint(f\"Sum of arrays: {arr1 + arr2}\")\nprint(f\"Mean of Array 1: {np.mean(arr1)}\")\nmatrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nprint(f\"\\nMatrix:\\n{matrix}\")\nprint(f\"Transpose of matrix:\\n{matrix.T}\")\n# Pandas intro",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "arr2 = np.array([6, 7, 8, 9, 10])\nprint(f\"Array 1: {arr1}\")\nprint(f\"Array 2: {arr2}\")\nprint(f\"Sum of arrays: {arr1 + arr2}\")\nprint(f\"Mean of Array 1: {np.mean(arr1)}\")\nmatrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nprint(f\"\\nMatrix:\\n{matrix}\")\nprint(f\"Transpose of matrix:\\n{matrix.T}\")\n# Pandas intro\n# I Pandas använder vi DataFrames, som kan beskrivas som en tabell.",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nprint(f\"\\nMatrix:\\n{matrix}\")\nprint(f\"Transpose of matrix:\\n{matrix.T}\")\n# Pandas intro\n# I Pandas använder vi DataFrames, som kan beskrivas som en tabell.\nprint(\"\\nPandas examples:\")\n# Varje key-value-pair i vår data-dictionary blir en rad i DataFramen\n# Vår data-tabell kommer ha tre kolonner: 'Name', 'Age' och 'City'\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David'],\n    'Age': [25, 30, 35, 28],\n    'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago']\n}\ndf = pd.DataFrame(data)\nprint(\"DataFrame:\")\nprint(df)\nprint(\"\\nDescriptive statistics:\")\nprint(df.describe())",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(\"DataFrame:\")\nprint(df)\nprint(\"\\nDescriptive statistics:\")\nprint(df.describe())\nprint(\"\\nGrouping and aggregation:\")\ngrouped = df.groupby('City')['Age'].mean()\nprint(grouped)\n# Matplotlib intro\nprint(\"\\nMatplotlib examples:\")",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "grouped = df.groupby('City')['Age'].mean()\nprint(grouped)\n# Matplotlib intro\nprint(\"\\nMatplotlib examples:\")\nx = np.linspace(0, 10, 100)\ny1 = np.sin(x)\ny2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label='sin(x)')\nplt.plot(x, y2, label='cos(x)')",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "x = np.linspace(0, 10, 100)\ny1 = np.sin(x)\ny2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label='sin(x)')\nplt.plot(x, y2, label='cos(x)')\nplt.title('Sine and Cosine Functions')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "y1",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "y1 = np.sin(x)\ny2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label='sin(x)')\nplt.plot(x, y2, label='cos(x)')\nplt.title('Sine and Cosine Functions')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.grid(True)",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "y2",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "y2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label='sin(x)')\nplt.plot(x, y2, label='cos(x)')\nplt.title('Sine and Cosine Functions')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.grid(True)\nplt.show()",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "csv_df",
+        "kind": 5,
+        "importPath": "week2.data_intro",
+        "description": "week2.data_intro",
+        "peekOfCode": "csv_df = pd.read_csv('sample_data.csv') # Läser in CSV-filen och skapar en DataFrame 'csv_df'\nprint(csv_df)\nprint(\"\\nBasic information about the DataFrame:\")\nprint(csv_df.info())\nprint(\"\\nSummary statistics:\")\nprint(csv_df.describe())\n# Kombinera Pandas och Matplotlib\n# Plottar data från CSV-filen\nplt.figure(figsize=(10, 6))\nplt.plot(csv_df['Date'], csv_df['Sales'], marker='o')",
+        "detail": "week2.data_intro",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5]\n# Lambda-funktionen x: x**2 kvadrerar varje tal i listan numbers.\nsquared = list(map(lambda x: x**2, numbers))\nprint(f\"Original: {numbers}\")\nprint(f\"Squared: {squared}\")\n# Filter function\n# Filter skapar en ny lista med element som uppfyller ett visst villkor\nprint(\"\\nFilter example:\")\n# Lambda-funktionen x: x % 2 == 0 behåller endast jämna tal\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "squared",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "squared = list(map(lambda x: x**2, numbers))\nprint(f\"Original: {numbers}\")\nprint(f\"Squared: {squared}\")\n# Filter function\n# Filter skapar en ny lista med element som uppfyller ett visst villkor\nprint(\"\\nFilter example:\")\n# Lambda-funktionen x: x % 2 == 0 behåller endast jämna tal\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(f\"Original: {numbers}\")\nprint(f\"Even numbers: {even_numbers}\")",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "even_numbers",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "even_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(f\"Original: {numbers}\")\nprint(f\"Even numbers: {even_numbers}\")\n# Reduce function\n# Reduce applicerar en funktion av två argument kumulativt på varje element i en lista\nprint(\"\\nReduce example:\")\n# Denna lambda-funktion har två argument (x, y) som returnerar x + y, dvs. summerar alla tal i listan.\nsum_of_numbers = reduce(lambda x, y: x + y, numbers)\nprint(f\"Original: {numbers}\")\nprint(f\"Sum: {sum_of_numbers}\")",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "sum_of_numbers",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "sum_of_numbers = reduce(lambda x, y: x + y, numbers)\nprint(f\"Original: {numbers}\")\nprint(f\"Sum: {sum_of_numbers}\")\n#reduce kan användas för mycket mer än bara addition. Du kan använda den för att:\n# Hitta det största värdet i en lista\n# Multiplicera alla tal i en lista\n# Bygga en sträng från en lista av ord\n# List comprehension\n# List comprehension är ett koncist sätt att skapa listor baserat på existerande listor\nprint(\"\\nList comprehension examples:\")",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "squares",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "squares = [x**2 for x in range(1, 6)]\nprint(f\"Squares: {squares}\")\n# Här skapas en lista med kvadrater av jämna tal mellan 1 och 10\neven_squares = [x**2 for x in range(1, 11) if x % 2 == 0]\nprint(f\"Even squares: {even_squares}\")\n# Lambda functions\n# Lambda-funktioner är små anonyma funktioner som kan ha vilket antal argument som helst,\n# men kan bara ha ett uttryck\nprint(\"\\nLambda function examples:\")\nmultiply = lambda x, y: x * y",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "even_squares",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "even_squares = [x**2 for x in range(1, 11) if x % 2 == 0]\nprint(f\"Even squares: {even_squares}\")\n# Lambda functions\n# Lambda-funktioner är små anonyma funktioner som kan ha vilket antal argument som helst,\n# men kan bara ha ett uttryck\nprint(\"\\nLambda function examples:\")\nmultiply = lambda x, y: x * y\nprint(f\"4 * 5 = {multiply(4, 5)}\")\n# Sorting with lambda\n# Lambda-funktioner kan användas som nycklar vid sortering",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "multiply = lambda x, y: x * y\nprint(f\"4 * 5 = {multiply(4, 5)}\")\n# Sorting with lambda\n# Lambda-funktioner kan användas som nycklar vid sortering\nprint(\"\\nSorting with lambda:\")\npairs = [(1, 'one'), (3, 'three'), (2, 'two')]\n# Här sorteras paren baserat på det andra elementet i varje par (strängen)\nsorted_pairs = sorted(pairs, key=lambda pair: pair[1])\nprint(f\"Sorted by second element: {sorted_pairs}\")\n# Combining functional concepts",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "pairs",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "pairs = [(1, 'one'), (3, 'three'), (2, 'two')]\n# Här sorteras paren baserat på det andra elementet i varje par (strängen)\nsorted_pairs = sorted(pairs, key=lambda pair: pair[1])\nprint(f\"Sorted by second element: {sorted_pairs}\")\n# Combining functional concepts\nprint(\"\\nCombining concepts:\")\nsentence = \"The quick brown fox jumps over the lazy dog\"\n# Denna nästa rad gör följande:\n# 1. Delar upp meningen i ord\n# 2. Filtrerar ut ord som inte börjar med en versal",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "sorted_pairs",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "sorted_pairs = sorted(pairs, key=lambda pair: pair[1])\nprint(f\"Sorted by second element: {sorted_pairs}\")\n# Combining functional concepts\nprint(\"\\nCombining concepts:\")\nsentence = \"The quick brown fox jumps over the lazy dog\"\n# Denna nästa rad gör följande:\n# 1. Delar upp meningen i ord\n# 2. Filtrerar ut ord som inte börjar med en versal\n# 3. Mappar len-funktionen över de kvarvarande orden för att få deras längder\nword_lengths = list(map(len, filter(lambda word: not word.islower(), sentence.split())))",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "sentence = \"The quick brown fox jumps over the lazy dog\"\n# Denna nästa rad gör följande:\n# 1. Delar upp meningen i ord\n# 2. Filtrerar ut ord som inte börjar med en versal\n# 3. Mappar len-funktionen över de kvarvarande orden för att få deras längder\nword_lengths = list(map(len, filter(lambda word: not word.islower(), sentence.split())))\nprint(f\"Lengths of words starting with uppercase: {word_lengths}\")",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "word_lengths",
+        "kind": 5,
+        "importPath": "week2.functional",
+        "description": "week2.functional",
+        "peekOfCode": "word_lengths = list(map(len, filter(lambda word: not word.islower(), sentence.split())))\nprint(f\"Lengths of words starting with uppercase: {word_lengths}\")",
+        "detail": "week2.functional",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "week2.libraryapp",
+        "description": "week2.libraryapp",
+        "peekOfCode": "class Book:\n    # Klassvariabel för att räkna antalet böcker\n    book_count = 0  # Adderas med 1 för varje bok-objekt som skapas\n    def __init__(self, title, author, year, genre, borrowed, pages):\n        # Set up attributes\n        self.title = title\n        self.author = author\n        self.year = year\n        self.genre = genre\n        self.is_borrowed = borrowed",
+        "detail": "week2.libraryapp",
+        "documentation": {}
+    },
+    {
+        "label": "Library",
+        "kind": 6,
+        "importPath": "week2.libraryapp",
+        "description": "week2.libraryapp",
+        "peekOfCode": "class Library:\n    def __init__(self, name, books=[]):\n        self.books = books\n        self.users = {}\n        self.name = \"Kungliga Biblioteket\"\n    @log_method_call\n    def add_book(self, book):\n        self.books.append(book)\n    @log_method_call\n    def remove_book(self, book):",
+        "detail": "week2.libraryapp",
+        "documentation": {}
+    },
+    {
+        "label": "log_method_call",
         "kind": 2,
-        "importPath": "week1.upp1",
-        "description": "week1.upp1",
-        "peekOfCode": "def palindrome(number):\n    if (number == number[::-1]):\n        return print(\"Number is palindrome\")\n    else:\n        return print(\"Number is NOT palindrome!\")\nwrite_in=input(\"Write to test if number is palindrome :\")\nprint(palindrome(write_in))",
-        "detail": "week1.upp1",
+        "importPath": "week2.libraryapp",
+        "description": "week2.libraryapp",
+        "peekOfCode": "def log_method_call(func):\n    def wrapper(*args, **kwargs):\n        print(f\"Anropar metod: {func.__name__}\")\n        return func(*args, **kwargs)\n    return wrapper\nclass Book:\n    # Klassvariabel för att räkna antalet böcker\n    book_count = 0  # Adderas med 1 för varje bok-objekt som skapas\n    def __init__(self, title, author, year, genre, borrowed, pages):\n        # Set up attributes",
+        "detail": "week2.libraryapp",
+        "documentation": {}
+    },
+    {
+        "label": "run_interactive_program",
+        "kind": 2,
+        "importPath": "week2.libraryapp",
+        "description": "week2.libraryapp",
+        "peekOfCode": "def run_interactive_program(library):\n    while True:\n        print(\"\\n--- Bibliotekssystem ---\")\n        print(\"1. Visa alla böcker\")\n        print(\"2. Låna en bok\")\n        print(\"3. Återlämna en bok\")\n        print(\"4. Visa lånade böcker\")\n        print(\"5. Avsluta\")\n        choice = input(\"Välj en åtgärd (1-5): \")\n        if choice == '1':",
+        "detail": "week2.libraryapp",
+        "documentation": {}
+    },
+    {
+        "label": "run_noninteractive_program",
+        "kind": 2,
+        "importPath": "week2.libraryapp",
+        "description": "week2.libraryapp",
+        "peekOfCode": "def run_noninteractive_program(library):\n        # Skapa en bibliotekarie och en låntagare om de inte redan finns\n    if 'LIB001' not in library.users:\n        librarian = Librarian(\"Anna Bibliotekarie\", \"LIB001\", \"Skönlitteratur\")\n        library.users['LIB001'] = librarian\n    else:\n        librarian = library.users['LIB001']\n    if 'LOAN001' not in library.users:\n        loaner = Loaner(\"Erik Låntagare\", \"LOAN001\")\n        library.users['LOAN001'] = loaner",
+        "detail": "week2.libraryapp",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "week2.libraryapp",
+        "description": "week2.libraryapp",
+        "peekOfCode": "def main():\n    try:\n        library = Library.load_from_file('library_data.json')\n        print(f\"Bibliotek laddat: {library.name}\")\n    except FileNotFoundError:\n        library = Library(\"Kungliga Biblioteket\")\n        print(f\"Nytt bibliotek skapat: {library.name}\")\n    library.load_users_from_file('library_users.txt')\n    interactive_program = input(\"Vill du köra en interaktiv version av programmet (ja/nej)? \")\n    if interactive_program.lower() == \"ja\":",
+        "detail": "week2.libraryapp",
         "documentation": {}
     },
     {
@@ -332,11 +650,299 @@
         "documentation": {}
     },
     {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "def greet(name):\n    #print(f\"Hello, {name}\")\n    return f\"Hello, {name}!\"\ndef squared(x):\n    return x**2\ngreeting = greet(\"Calle\")\nprint(greeting)\na = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
         "label": "squared",
         "kind": 2,
         "importPath": "week2.python-rep",
         "description": "week2.python-rep",
-        "peekOfCode": "def squared(x):\n    return x**2\na=3\na_squared= squared(a)\nprint(f\"{a} squared is: {a_squared}\")",
+        "peekOfCode": "def squared(x):\n    return x**2\ngreeting = greet(\"Calle\")\nprint(greeting)\na = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "random_int",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "random_int = random.randint(0,5)\nprint(random_int)\n'''\nmulti-\nline\ncomment\n'''\n# 1. Basic syntrax, kommentarer, printing\nprint(\"Hej, klassen!\") # Printa i Python\n# 2. Variabler och datatyper",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "x = 30               # int\ny = 3.14            # float\nname = \"Calle\"     # string\nis_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "y = 3.14            # float\nname = \"Calle\"     # string\nis_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "name = \"Calle\"     # string\nis_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "is_fun",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "is_fun = True       # boolean\n# 3. Type checking, typkonverterting\nprint(type(x))\nz = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "z = str(x)\nprint(type(z))\na = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations\nprint(len(name))\nprint(name.upper())\nprint(name.lower())",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "a = \"10\"\nb = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations\nprint(len(name))\nprint(name.upper())\nprint(name.lower())\nstripped_str = \"  string with spaces  \".strip()\nfully_stripped_str = \"  string with spaces  \".replace(\" \", \"\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "b = int(a) + 1\nb += 1      # Samma som b = b + 1\nprint(b)\n# 4 string operations\nprint(len(name))\nprint(name.upper())\nprint(name.lower())\nstripped_str = \"  string with spaces  \".strip()\nfully_stripped_str = \"  string with spaces  \".replace(\" \", \"\")\nmy_sentence_string = \"a string with multiple words\"",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "stripped_str",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "stripped_str = \"  string with spaces  \".strip()\nfully_stripped_str = \"  string with spaces  \".replace(\" \", \"\")\nmy_sentence_string = \"a string with multiple words\"\nstring_list = my_sentence_string.split(\" \")\nprint(string_list)\n# 5 string formatting\nprint(f\"My name is {name} and I'm {x} years old\")\nprint(\"Pi is approximately {:.2f}\".format(y))\n# 6 Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "fully_stripped_str",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "fully_stripped_str = \"  string with spaces  \".replace(\" \", \"\")\nmy_sentence_string = \"a string with multiple words\"\nstring_list = my_sentence_string.split(\" \")\nprint(string_list)\n# 5 string formatting\nprint(f\"My name is {name} and I'm {x} years old\")\nprint(\"Pi is approximately {:.2f}\".format(y))\n# 6 Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "my_sentence_string",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "my_sentence_string = \"a string with multiple words\"\nstring_list = my_sentence_string.split(\" \")\nprint(string_list)\n# 5 string formatting\nprint(f\"My name is {name} and I'm {x} years old\")\nprint(\"Pi is approximately {:.2f}\".format(y))\n# 6 Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")\nfruits.insert(1, \"strawberry\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "string_list",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "string_list = my_sentence_string.split(\" \")\nprint(string_list)\n# 5 string formatting\nprint(f\"My name is {name} and I'm {x} years old\")\nprint(\"Pi is approximately {:.2f}\".format(y))\n# 6 Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")\nfruits.insert(1, \"strawberry\")\nprint(fruits[2])",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "fruits = [\"apple\", \"banana\", \"cherry\", \"apple\"]\nfruits.append(\"date\")\nfruits.insert(1, \"strawberry\")\nprint(fruits[2])\nprint(fruits)\nfruits_string = \", \".join(fruits)\n# 7 Dictionaries\nperson_dict1 = { \"name\":\"Alice\", \"age\":30, \"city\":\"New York\" }\nprint(person_dict1[\"name\"])\nperson_dict1[\"job\"] = \"Developer\"",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "fruits_string",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "fruits_string = \", \".join(fruits)\n# 7 Dictionaries\nperson_dict1 = { \"name\":\"Alice\", \"age\":30, \"city\":\"New York\" }\nprint(person_dict1[\"name\"])\nperson_dict1[\"job\"] = \"Developer\"\nprint(person_dict1[\"job\"])\nperson_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "person_dict1",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "person_dict1 = { \"name\":\"Alice\", \"age\":30, \"city\":\"New York\" }\nprint(person_dict1[\"name\"])\nperson_dict1[\"job\"] = \"Developer\"\nprint(person_dict1[\"job\"])\nperson_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets & Tuples",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "person_dict1[\"job\"]",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "person_dict1[\"job\"] = \"Developer\"\nprint(person_dict1[\"job\"])\nperson_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets & Tuples\nunique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "person_dict2",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "person_dict2 = { \"name\":\"Calle\", \"age\":31, \"city\":\"Stockholm\", \"job\":\"Teacher\" }\nperson_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets & Tuples\nunique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)\nunique_fruits = set(fruits)\nprint(unique_fruits)",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "person_list",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "person_list = [] # =list()\nperson_list.append(person_dict1)\nperson_list.append(person_dict2)\nprint(person_list)\n# 8 Sets & Tuples\nunique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)\nunique_fruits = set(fruits)\nprint(unique_fruits)\nnumbers_tuple = tuple(unique_numbers) # Tuplar är listor som ej går att modifiera, dvs innehållet går inte att ändra på.",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "unique_numbers",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "unique_numbers = {1, 2, 3, 4, 5, 5, 5}\nprint(unique_numbers)\nunique_fruits = set(fruits)\nprint(unique_fruits)\nnumbers_tuple = tuple(unique_numbers) # Tuplar är listor som ej går att modifiera, dvs innehållet går inte att ändra på.\n# 9 Input från användare\n#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "unique_fruits",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "unique_fruits = set(fruits)\nprint(unique_fruits)\nnumbers_tuple = tuple(unique_numbers) # Tuplar är listor som ej går att modifiera, dvs innehållet går inte att ändra på.\n# 9 Input från användare\n#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "numbers_tuple",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "numbers_tuple = tuple(unique_numbers) # Tuplar är listor som ej går att modifiera, dvs innehållet går inte att ändra på.\n# 9 Input från användare\n#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")\nelif age >= 13:\n    print(\"Du är tonåring\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "#username_input",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "#username_input = input(\"Please enter your username: \")\n#print(f\"You entered username: {username_input}\")\n# 10 Conditionals \nage = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")\nelif age >= 13:\n    print(\"Du är tonåring\")\nelse:\n    print(\"Du är ett barn\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "age = 20\nif age >= 18:\n    print(\"Du får gå på klubb\")\nelif age >= 13:\n    print(\"Du är tonåring\")\nelse:\n    print(\"Du är ett barn\")\n# match kräver Python 3.10 eller senare\n'''\nnum = 3",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "num = 3\nmatch num:\n    case 1:\n        print(\"One\")\n    case 2:\n        print(\"Two\")\n    case 3:\n        print(\"Three\")\n    case 4:\n        print(\"Four\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "count = 0\nwhile count < 5:    # Vi loopar så länge (\"while\") villkoret är sant. \n    print(count)\n    count = count + 1\n# Oändlig while-loop\ncount = 1\nwhile True: # Detta villkor är alltid sant\n    print(f\"Count is now: {count}\")\n    count += 1\n    if (count >= 50):",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "count = 1\nwhile True: # Detta villkor är alltid sant\n    print(f\"Count is now: {count}\")\n    count += 1\n    if (count >= 50):\n        break   # Bryter ur loopen\nprint(\"Range loop\")\nfor i in range(5): # range(5) = [0,1,2,3,4]\n    print(i)\n# Använda listan eller strängens storlek/längd med range för att gå igenom listans index:",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "my_numbers",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "my_numbers = [5,2,1,25,61,21]\nfor i in range(len(my_numbers)):\n    print(f\"On index {i}, we have number: {my_numbers[i]}\") # Vi använder indexet 'i' för att komma åt det värde/siffra som ligger på det indexet\n# Vi kan också loopa igenom listan/strängens värden/element direkt:\nfor number in my_numbers:   # Variabeln 'number' kan egentligen heta vad som helst, men det hjälper om variabelnamnet är deskriptivt. 'number' ger en tydlig indikation på vad för typ av värde variabeln kommer vara.\n    print(f\"Number: {number}\")\n# Loopar med dictionaries\nmy_phonenumber_dict = {\"0725123112\":\"Calle\", \"0738519472\":\"Anna\", \"0703126123\":\"Bertil\"}\nfor key, item in my_phonenumber_dict.items():   # Loop-variablerna 'key' och 'item' hade kunnat heta t.ex. 'phone_number' och 'name' istället.\n    print(f\"Phone number {key} belongs to {item}\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "my_phonenumber_dict",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "my_phonenumber_dict = {\"0725123112\":\"Calle\", \"0738519472\":\"Anna\", \"0703126123\":\"Bertil\"}\nfor key, item in my_phonenumber_dict.items():   # Loop-variablerna 'key' och 'item' hade kunnat heta t.ex. 'phone_number' och 'name' istället.\n    print(f\"Phone number {key} belongs to {item}\")\n# Functions\ndef greet(name):\n    #print(f\"Hello, {name}\")\n    return f\"Hello, {name}!\"\ndef squared(x):\n    return x**2\ngreeting = greet(\"Calle\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "greeting",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "greeting = greet(\"Calle\")\nprint(greeting)\na = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "a = 3\na_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
+        "detail": "week2.python-rep",
+        "documentation": {}
+    },
+    {
+        "label": "a_squared",
+        "kind": 5,
+        "importPath": "week2.python-rep",
+        "description": "week2.python-rep",
+        "peekOfCode": "a_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
         "detail": "week2.python-rep",
         "documentation": {}
     },
@@ -347,6 +953,33 @@
         "description": "week2.uppy",
         "peekOfCode": "class Person:\n    def __init__(self,name,age):\n            self.name=name\n            self.age=age\n            self.hobbies=[]\n    def introduce(self):\n        return f\"Hi, my name is {self.name} and i am {self.age} years old.\"\n# Exempeluppgift del 2 - Attribut och metoder för Person\n# Utöka Person-klassen från föregående uppgift:\n# Lägg till ett attribut hobbies som en lista i konstruktorn.",
         "detail": "week2.uppy",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "week2.users",
+        "description": "week2.users",
+        "peekOfCode": "class User:\n    def __init__(self, name, user_id):\n        self.name = name\n        self.user_id = user_id  # Unikt för varje användare\n    def __str__(self):\n        return f\"{self.name} (ID: {self.user_id})\"\n# Arv: Loaner (låntagare) ärver från User. Loaner är en \"child\" till User, som är en \"parent\" class. \nclass Loaner(User):\n    def __init__(self, name, user_id):\n        super().__init__(name, user_id)",
+        "detail": "week2.users",
+        "documentation": {}
+    },
+    {
+        "label": "Loaner",
+        "kind": 6,
+        "importPath": "week2.users",
+        "description": "week2.users",
+        "peekOfCode": "class Loaner(User):\n    def __init__(self, name, user_id):\n        super().__init__(name, user_id)\n        self.borrowed_books = []\n    def borrow_book(self, book):\n        if book.borrow():\n            self.borrowed_books.append(book)\n            book.borrower_id = self.user_id\n            return True\n        return False",
+        "detail": "week2.users",
+        "documentation": {}
+    },
+    {
+        "label": "Librarian",
+        "kind": 6,
+        "importPath": "week2.users",
+        "description": "week2.users",
+        "peekOfCode": "class Librarian(User):\n    def __init__(self, name, user_id, department):\n        super().__init__(name, user_id)\n        self.department = department\n        self.working_hours = {\"Monday\": [9,17], \"Tuesday\": [9,17], \"Wednesday\": [9,17], \"Thursday\": [9,17], \"Friday\": [9,16], \"Saturday\": [10,16], \"Sunday\": [11,16]}\n    def add_book_to_library(self, library, book):\n        library.add_book(book)\n    def remove_book_from_library(self, library, book):\n        library.remove_book(book)",
+        "detail": "week2.users",
         "documentation": {}
     }
 ]
