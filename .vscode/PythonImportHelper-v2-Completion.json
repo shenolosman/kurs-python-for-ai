@@ -94,6 +94,22 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "Librarian",
         "importPath": "users",
         "description": "users",
@@ -107,6 +123,32 @@
         "description": "users",
         "isExtraImport": true,
         "detail": "users",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
@@ -980,6 +1022,312 @@
         "description": "week2.users",
         "peekOfCode": "class Librarian(User):\n    def __init__(self, name, user_id, department):\n        super().__init__(name, user_id)\n        self.department = department\n        self.working_hours = {\"Monday\": [9,17], \"Tuesday\": [9,17], \"Wednesday\": [9,17], \"Thursday\": [9,17], \"Friday\": [9,16], \"Saturday\": [10,16], \"Sunday\": [11,16]}\n    def add_book_to_library(self, library, book):\n        library.add_book(book)\n    def remove_book_from_library(self, library, book):\n        library.remove_book(book)",
         "detail": "week2.users",
+        "documentation": {}
+    },
+    {
+        "label": "StockAnalyzer",
+        "kind": 6,
+        "importPath": "week3.stock analyzer.stockapp",
+        "description": "week3.stock analyzer.stockapp",
+        "peekOfCode": "class StockAnalyzer:\n    def __init__(self, csv_file):\n        self.df = self.load_data(csv_file)\n        self.clean_data()\n        self.calculate_additional_features()\n    def load_data(self, csv_file):\n        df = pd.read_csv(csv_file, index_col='Date', parse_dates=True)\n        df.sort_index(inplace=True)\n        return df\n    def clean_data(self):",
+        "detail": "week3.stock analyzer.stockapp",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "week3.stock analyzer.stockapp",
+        "description": "week3.stock analyzer.stockapp",
+        "peekOfCode": "def main():\n    analyzer = StockAnalyzer('stock_data_large.csv')  # Use stock_data.csv or stock_data_large.csv\n    print(\"Generating visualizations...\")\n    analyzer.plot_stock_prices()\n    analyzer.plot_candlestick_chart()\n    analyzer.plot_returns_histogram()\n    print(\"Running simple moving average strategy...\")\n    analyzer.simple_moving_average_strategy()\n    analyzer.plot_strategy_performance()\n    print(\"Generating price predictions...\")",
+        "detail": "week3.stock analyzer.stockapp",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week3.weather analyzer.weatherapp",
+        "description": "week3.weather analyzer.weatherapp",
+        "peekOfCode": "data = pd.read_csv('~/week3/weather analyzer/weather_data.csv', parse_dates=['Date'])\n# Hantera saknade värden genom att fylla med genomsnitt eller ta bort rader\ndata.fillna(method='ffill', inplace=True)\n# Skapa en ny kolumn för månad från datumet\ndata['Month'] = data['Date'].dt.to_period('M')\n# Beräkna genomsnittlig temperatur per månad\nmonthly_avg_temp = data.groupby('Month')['Temperature'].mean()\nprint(monthly_avg_temp)",
+        "detail": "week3.weather analyzer.weatherapp",
+        "documentation": {}
+    },
+    {
+        "label": "data['Month']",
+        "kind": 5,
+        "importPath": "week3.weather analyzer.weatherapp",
+        "description": "week3.weather analyzer.weatherapp",
+        "peekOfCode": "data['Month'] = data['Date'].dt.to_period('M')\n# Beräkna genomsnittlig temperatur per månad\nmonthly_avg_temp = data.groupby('Month')['Temperature'].mean()\nprint(monthly_avg_temp)",
+        "detail": "week3.weather analyzer.weatherapp",
+        "documentation": {}
+    },
+    {
+        "label": "monthly_avg_temp",
+        "kind": 5,
+        "importPath": "week3.weather analyzer.weatherapp",
+        "description": "week3.weather analyzer.weatherapp",
+        "peekOfCode": "monthly_avg_temp = data.groupby('Month')['Temperature'].mean()\nprint(monthly_avg_temp)",
+        "detail": "week3.weather analyzer.weatherapp",
+        "documentation": {}
+    },
+    {
+        "label": "n_samples",
+        "kind": 5,
+        "importPath": "week3.generate_sample_data",
+        "description": "week3.generate_sample_data",
+        "peekOfCode": "n_samples = 1000\ndata = {\n    'Name': [f'Person_{i}' for i in range(n_samples)],\n    'Age': np.random.randint(18, 80, n_samples),\n    'City': np.random.choice(['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'], n_samples),\n    'Salary': np.random.normal(50000, 15000, n_samples).astype(int),\n    'Years_Experience': np.random.randint(0, 30, n_samples),\n    'Department': np.random.choice(['Sales', 'Marketing', 'Engineering', 'HR', 'Finance'], n_samples),\n    'Performance_Score': np.random.uniform(1, 5, n_samples).round(2),\n    'Training_Hours': np.random.poisson(40, n_samples),",
+        "detail": "week3.generate_sample_data",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week3.generate_sample_data",
+        "description": "week3.generate_sample_data",
+        "peekOfCode": "data = {\n    'Name': [f'Person_{i}' for i in range(n_samples)],\n    'Age': np.random.randint(18, 80, n_samples),\n    'City': np.random.choice(['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'], n_samples),\n    'Salary': np.random.normal(50000, 15000, n_samples).astype(int),\n    'Years_Experience': np.random.randint(0, 30, n_samples),\n    'Department': np.random.choice(['Sales', 'Marketing', 'Engineering', 'HR', 'Finance'], n_samples),\n    'Performance_Score': np.random.uniform(1, 5, n_samples).round(2),\n    'Training_Hours': np.random.poisson(40, n_samples),\n    'Satisfaction_Level': np.random.choice(['Low', 'Medium', 'High'], n_samples),",
+        "detail": "week3.generate_sample_data",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week3.generate_sample_data",
+        "description": "week3.generate_sample_data",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Add some NaN values\ndf.loc[np.random.choice(df.index, 50), 'Salary'] = np.nan\ndf.loc[np.random.choice(df.index, 50), 'Performance_Score'] = np.nan\n# Save to CSV\ndf.to_csv('sample_data0.csv', index=False)\nprint(\"sample_data0.csv has been generated successfully.\")",
+        "detail": "week3.generate_sample_data",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "df = pd.DataFrame(\n    {\n        \"Name\": [\"Alice\", \"Bob\", \"Charlie\"],\n        \"Age\": [25, 30, 35],\n        \"City\": [\"New York\", \"Los Angeles\", \"Chicago\"],\n    }\n)\nprint(\"Basic DataFrame:\")\nprint(df)\n# Reading CSV file",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "csv_df",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "csv_df = pd.read_csv(\"sample_data0.csv\")\nprint(\"\\nFirst 5 rows of CSV data:\")\nprint(csv_df.head())\n# Basic information about the DataFrame\nprint(\"\\nDataFrame Info:\")\nprint(csv_df.info())\n# Statistical summary\nprint(\"\\nStatistical Summary:\")\nprint(csv_df.describe())\n# Grouping and aggregation",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "filled_df",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "filled_df = csv_df.fillna(0)\nprint(filled_df.head())\nprint(\"\\nDropping rows with NaN values:\")\ncleaned_df = csv_df.dropna()\nprint(cleaned_df.head())\n# Data manipulation\nprint(\"\\nAdding a new column:\")\ncsv_df[\"Experience_Category\"] = pd.cut(\n    csv_df[\"Years_Experience\"],\n    bins=[0, 5, 10, 20, 30],",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "cleaned_df",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "cleaned_df = csv_df.dropna()\nprint(cleaned_df.head())\n# Data manipulation\nprint(\"\\nAdding a new column:\")\ncsv_df[\"Experience_Category\"] = pd.cut(\n    csv_df[\"Years_Experience\"],\n    bins=[0, 5, 10, 20, 30],\n    labels=[\"Entry\", \"Mid\", \"Senior\", \"Expert\"],\n)\nprint(csv_df[[\"Name\", \"Years_Experience\", \"Experience_Category\"]].head(10))",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "csv_df[\"Experience_Category\"]",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "csv_df[\"Experience_Category\"] = pd.cut(\n    csv_df[\"Years_Experience\"],\n    bins=[0, 5, 10, 20, 30],\n    labels=[\"Entry\", \"Mid\", \"Senior\", \"Expert\"],\n)\nprint(csv_df[[\"Name\", \"Years_Experience\", \"Experience_Category\"]].head(10))\n# NumPy Examples\nprint(\"\\nNumPy Examples:\")\n# Creating arrays\narr1 = np.array([1, 2, 3, 4, 5])",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "arr1 = np.array([1, 2, 3, 4, 5])\narr2 = np.array([6, 7, 8, 9, 10])\nprint(\"Array 1:\", arr1)\nprint(\"Array 2:\", arr2)\n# Array operations\nprint(\"Sum of arrays:\", arr1 + arr2)\nprint(\"Product of arrays:\", arr1 * arr2)\nprint(\"Mean of Array 1:\", np.mean(arr1))\n# Creating matrices\nmatrix1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "arr2 = np.array([6, 7, 8, 9, 10])\nprint(\"Array 1:\", arr1)\nprint(\"Array 2:\", arr2)\n# Array operations\nprint(\"Sum of arrays:\", arr1 + arr2)\nprint(\"Product of arrays:\", arr1 * arr2)\nprint(\"Mean of Array 1:\", np.mean(arr1))\n# Creating matrices\nmatrix1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nmatrix2 = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "matrix1",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "matrix1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nmatrix2 = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])\nprint(\"\\nMatrix 1:\")\nprint(matrix1)\nprint(\"Matrix 2:\")\nprint(matrix2)\n# Matrix operations\nprint(\"Matrix addition:\")\nprint(matrix1 + matrix2)\nprint(\"Matrix multiplication:\")",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "matrix2",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "matrix2 = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])\nprint(\"\\nMatrix 1:\")\nprint(matrix1)\nprint(\"Matrix 2:\")\nprint(matrix2)\n# Matrix operations\nprint(\"Matrix addition:\")\nprint(matrix1 + matrix2)\nprint(\"Matrix multiplication:\")\nprint(np.matmul(matrix1, matrix2))",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "normal_dist",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "normal_dist = np.random.normal(0, 1, 1000)\nprint(normal_dist[:10])  # Print first 10 numbers\n# Matplotlib Examples\nprint(\"\\nMatplotlib Examples:\")\n# Line plot\nx = np.linspace(0, 10, 100)\ny1 = np.sin(x)\ny2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label=\"sin(x)\")",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "x = np.linspace(0, 10, 100)\ny1 = np.sin(x)\ny2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label=\"sin(x)\")\nplt.plot(x, y2, label=\"cos(x)\")\nplt.title(\"Sine and Cosine Functions\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.legend()",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "y1",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "y1 = np.sin(x)\ny2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label=\"sin(x)\")\nplt.plot(x, y2, label=\"cos(x)\")\nplt.title(\"Sine and Cosine Functions\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.legend()\nplt.grid(True)",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "y2",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "y2 = np.cos(x)\nplt.figure(figsize=(10, 6))\nplt.plot(x, y1, label=\"sin(x)\")\nplt.plot(x, y2, label=\"cos(x)\")\nplt.title(\"Sine and Cosine Functions\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.legend()\nplt.grid(True)\nplt.show()",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "correlation_matrix",
+        "kind": 5,
+        "importPath": "week3.more_data",
+        "description": "week3.more_data",
+        "peekOfCode": "correlation_matrix = csv_df.select_dtypes(include=[np.number]).corr()\nsns.heatmap(correlation_matrix, annot=True, cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Correlation Matrix of Numerical Variables\")\nplt.show()\nprint(\"All examples have been executed. Check the generated plots for visual results.\")",
+        "detail": "week3.more_data",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "week4.flower_classification",
+        "description": "week4.flower_classification",
+        "peekOfCode": "iris = tf.keras.datasets.iris\n(x_train, y_train), (x_test, y_test) = iris.load_data()\n# Normalisera indata\n# viktigt för att få alla features i samma skala\nx_train, x_test = x_train / np.max(x_train), x_test / np.max(x_test)\n# Konvertera etiketter till one-hot encoding\n# Nödvändigt för fler flerklass-klassificering\ny_train = tf.keras.utils.to_categorically(y_train)\ny_test = tf.keras.utils.to_categorically(y_test)\n# Skapa en enkel sekventiell modell",
+        "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "week4.flower_classification",
+        "description": "week4.flower_classification",
+        "peekOfCode": "y_train = tf.keras.utils.to_categorically(y_train)\ny_test = tf.keras.utils.to_categorically(y_test)\n# Skapa en enkel sekventiell modell\n# Grundläggande typ av neural network, varje lager kopplat till nästa\nmodel = tf.keras.models.Sequential(\n    [\n        tf.keras.layers.Dense(10, activatoin=\"relu\", input_shape=(4,)),\n        tf.keras.layers.Dense(\n            10,\n            activatoin=\"relu\",",
+        "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "week4.flower_classification",
+        "description": "week4.flower_classification",
+        "peekOfCode": "y_test = tf.keras.utils.to_categorically(y_test)\n# Skapa en enkel sekventiell modell\n# Grundläggande typ av neural network, varje lager kopplat till nästa\nmodel = tf.keras.models.Sequential(\n    [\n        tf.keras.layers.Dense(10, activatoin=\"relu\", input_shape=(4,)),\n        tf.keras.layers.Dense(\n            10,\n            activatoin=\"relu\",\n        ),",
+        "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.flower_classification",
+        "description": "week4.flower_classification",
+        "peekOfCode": "model = tf.keras.models.Sequential(\n    [\n        tf.keras.layers.Dense(10, activatoin=\"relu\", input_shape=(4,)),\n        tf.keras.layers.Dense(\n            10,\n            activatoin=\"relu\",\n        ),\n        tf.keras.layers.Dense(\n            10,\n            activatoin=\"softmax\",",
+        "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "week4.flower_classification",
+        "description": "week4.flower_classification",
+        "peekOfCode": "history = model.fit(x_train, y_train, epochs=50, validation_split=0.2, verbose=0)\n# Utvärdera modellen på testdata\ntest_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)\nprint(f\"Test Accuracy: {test_acc}\")\n# Visualisera träningshistorik\nplt.figure(figsize=(12, 4))\n# Plot träningsnoggrannhet och valideringsnoggrannhet\nplt.subplot(1, 2, 1)\nplt.plot(history.history[\"accuracy\"], label=\"Training Accuracy\")\nplt.plot(history.history[\"val_accuracy\"], label=\"Validation Accuracy\")",
+        "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "sample_predictions",
+        "kind": 5,
+        "importPath": "week4.flower_classification",
+        "description": "week4.flower_classification",
+        "peekOfCode": "sample_predictions = model.predict(x_test[:3])\nprint(\"\\nSample predictions:\")\nfor i, pred in enumerate(sample_predictions):\n    print(f\"Example {i+1}: {pred}\")\n    print(f\"Predicted class: {np.argmax(pred)}\")\n    print(f\"Actual class: {np.argmax(y_test[i])}\")\n    print()",
+        "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week4.untitled12",
+        "description": "week4.untitled12",
+        "peekOfCode": "x = np.array([-7.0, -4.0, -1.0, 2.0, 5.0, 8.0, 11.0, 14.0])\ny = np.array([3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0])\n# visualisera min data\nplt.scatter(x, y)\n\"\"\"Bygga en modell som förutspår datan utifrån olika värden, t.ex  17, 20, 27 etc.\n\"\"\"\nx.ndim\n\"\"\"STEG FÖR ATT BYGGA EN MODELL i tensorflow\n1.   Create\n2.   Compile",
+        "detail": "week4.untitled12",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "week4.untitled12",
+        "description": "week4.untitled12",
+        "peekOfCode": "y = np.array([3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0])\n# visualisera min data\nplt.scatter(x, y)\n\"\"\"Bygga en modell som förutspår datan utifrån olika värden, t.ex  17, 20, 27 etc.\n\"\"\"\nx.ndim\n\"\"\"STEG FÖR ATT BYGGA EN MODELL i tensorflow\n1.   Create\n2.   Compile\n3.   Fit",
+        "detail": "week4.untitled12",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.untitled12",
+        "description": "week4.untitled12",
+        "peekOfCode": "model = tf.keras.Sequential([tf.keras.layers.Dense(1)])  # output Layer\n# Step2.  Compile\nmodel.compile(\n    loss=tf.keras.losses.mae,\n    optimizer=tf.keras.optimizers.SGD(),  # hur modellen förbättras\n    metrics=[\"mae\"],\n)\n# Step3.  Fit\nmodel.fit(\n    tf.expand_dims(x, axis=-1), y, epochs=50",
+        "detail": "week4.untitled12",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "week4.untitled12",
+        "description": "week4.untitled12",
+        "peekOfCode": "y_pred = model.predict(np.array([49]))\ny_pred\n\"\"\"IMPROVE MODEL\nCREATE\n1.   More layers\n2.   More hidden units\n3.   Change Activation function\nCOMPILE\n1.   Optimization function\n2.   Learning rate",
+        "detail": "week4.untitled12",
+        "documentation": {}
+    },
+    {
+        "label": "model2",
+        "kind": 5,
+        "importPath": "week4.untitled12",
+        "description": "week4.untitled12",
+        "peekOfCode": "model2 = tf.keras.Sequential(\n    [\n        tf.keras.layers.Dense(50, activation=None),\n        tf.keras.layers.Dense(1),  # output Layer\n    ]\n)\n# Step2.  Compile\nmodel2.compile(\n    loss=tf.keras.losses.mae,\n    optimizer=tf.keras.optimizers.Adam(0.01),  # hur modellen förbättras",
+        "detail": "week4.untitled12",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "week4.untitled12",
+        "description": "week4.untitled12",
+        "peekOfCode": "y_pred = model2.predict(np.array([49]))\ny_pred",
+        "detail": "week4.untitled12",
         "documentation": {}
     }
 ]
