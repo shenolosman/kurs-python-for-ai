@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 # Läs in CSV-filen
-data = pd.read_csv('~/week3/weather analyzer/weather_data.csv', parse_dates=['Date'])
+data = pd.read_csv('weather_data.csv', parse_dates=['Date'])
 
 # Hantera saknade värden genom att fylla med genomsnitt eller ta bort rader
 data.fillna(method='ffill', inplace=True)

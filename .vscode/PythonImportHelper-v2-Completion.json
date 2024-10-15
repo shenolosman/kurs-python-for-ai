@@ -144,11 +144,196 @@
         "documentation": {}
     },
     {
+        "label": "layers",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "layers",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "cifar10",
+        "importPath": "tensorflow.keras.datasets",
+        "description": "tensorflow.keras.datasets",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "mnist",
+        "importPath": "tensorflow.keras.datasets",
+        "description": "tensorflow.keras.datasets",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "ResNet50",
+        "importPath": "tensorflow.keras.applications",
+        "description": "tensorflow.keras.applications",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.applications",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Flatten",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "tensorflow.keras.models",
+        "description": "tensorflow.keras.models",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDataGenerator",
+        "importPath": "tensorflow.keras.preprocessing.image",
+        "description": "tensorflow.keras.preprocessing.image",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.image",
+        "documentation": {}
+    },
+    {
         "label": "train_test_split",
         "importPath": "sklearn.model_selection",
         "description": "sklearn.model_selection",
         "isExtraImport": true,
         "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "MultinomialNB",
+        "importPath": "sklearn.naive_bayes",
+        "description": "sklearn.naive_bayes",
+        "isExtraImport": true,
+        "detail": "sklearn.naive_bayes",
+        "documentation": {}
+    },
+    {
+        "label": "make_pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "make_blobs",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
         "documentation": {}
     },
     {
@@ -1047,7 +1232,7 @@
         "kind": 5,
         "importPath": "week3.weather analyzer.weatherapp",
         "description": "week3.weather analyzer.weatherapp",
-        "peekOfCode": "data = pd.read_csv('~/week3/weather analyzer/weather_data.csv', parse_dates=['Date'])\n# Hantera saknade värden genom att fylla med genomsnitt eller ta bort rader\ndata.fillna(method='ffill', inplace=True)\n# Skapa en ny kolumn för månad från datumet\ndata['Month'] = data['Date'].dt.to_period('M')\n# Beräkna genomsnittlig temperatur per månad\nmonthly_avg_temp = data.groupby('Month')['Temperature'].mean()\nprint(monthly_avg_temp)",
+        "peekOfCode": "data = pd.read_csv('weather_data.csv', parse_dates=['Date'])\n# Hantera saknade värden genom att fylla med genomsnitt eller ta bort rader\ndata.fillna(method='ffill', inplace=True)\n# Skapa en ny kolumn för månad från datumet\ndata['Month'] = data['Date'].dt.to_period('M')\n# Beräkna genomsnittlig temperatur per månad\nmonthly_avg_temp = data.groupby('Month')['Temperature'].mean()\nprint(monthly_avg_temp)",
         "detail": "week3.weather analyzer.weatherapp",
         "documentation": {}
     },
@@ -1223,6 +1408,186 @@
         "documentation": {}
     },
     {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "X_train = X_train / 255.0\nX_test = X_test / 255.0\n# Sınıf isimleri\nclass_names = [\n    \"airplane\",\n    \"automobile\",\n    \"bird\",\n    \"cat\",\n    \"deer\",\n    \"dog\",",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "X_test = X_test / 255.0\n# Sınıf isimleri\nclass_names = [\n    \"airplane\",\n    \"automobile\",\n    \"bird\",\n    \"cat\",\n    \"deer\",\n    \"dog\",\n    \"frog\",",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "class_names",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "class_names = [\n    \"airplane\",\n    \"automobile\",\n    \"bird\",\n    \"cat\",\n    \"deer\",\n    \"dog\",\n    \"frog\",\n    \"horse\",\n    \"ship\",",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "model = models.Sequential(\n    [\n        layers.Conv2D(32, (3, 3), activation=\"relu\", input_shape=(32, 32, 3)),\n        layers.MaxPooling2D((2, 2)),\n        layers.Conv2D(64, (3, 3), activation=\"relu\"),\n        layers.MaxPooling2D((2, 2)),\n        layers.Conv2D(64, (3, 3), activation=\"relu\"),\n        # Fully connected katmanlar\n        layers.Flatten(),\n        layers.Dense(64, activation=\"relu\"),",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "predictions",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "predictions = model.predict(X_test)\npredicted_label = class_names[predictions[0].argmax()]\n# Görüntüyü gösterme ve tahmin edilen etiketi yazdırma\nplt.imshow(X_test[0])\nplt.title(f\"Gerçek: {class_names[y_test[0][0]]}, Tahmin: {predicted_label}\")\nplt.show()\n# Kodun Açıklaması:\n# CIFAR-10 Veri Seti: Bu veri seti, 10 sınıfa ait 60,000 adet 32x32 boyutlarında renkli görüntüden oluşur. 50,000'i eğitim, 10,000'i test verisidir.\n# Convolutional Neural Network (CNN): CNN, görüntülerdeki lokal özellikleri öğrenmek için kullanılan bir sinir ağı türüdür. Bu modelde üç adet convolution ve pooling katmanı bulunmaktadır.\n# Girdi Şekli: CNN'de görüntülerin girdi boyutu 32x32 piksel ve 3 kanal (RGB) içerir.",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "predicted_label",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "predicted_label = class_names[predictions[0].argmax()]\n# Görüntüyü gösterme ve tahmin edilen etiketi yazdırma\nplt.imshow(X_test[0])\nplt.title(f\"Gerçek: {class_names[y_test[0][0]]}, Tahmin: {predicted_label}\")\nplt.show()\n# Kodun Açıklaması:\n# CIFAR-10 Veri Seti: Bu veri seti, 10 sınıfa ait 60,000 adet 32x32 boyutlarında renkli görüntüden oluşur. 50,000'i eğitim, 10,000'i test verisidir.\n# Convolutional Neural Network (CNN): CNN, görüntülerdeki lokal özellikleri öğrenmek için kullanılan bir sinir ağı türüdür. Bu modelde üç adet convolution ve pooling katmanı bulunmaktadır.\n# Girdi Şekli: CNN'de görüntülerin girdi boyutu 32x32 piksel ve 3 kanal (RGB) içerir.\n# Softmax Çıktı Katmanı: Son katmanda 10 sınıfa ait olasılıkları döndüren bir softmax katmanı bulunur.",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "base_model",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "base_model = ResNet50(weights=\"imagenet\", include_top=False, input_shape=(224, 224, 3))\n# Yeni sınıflandırıcı katmanları ekleme\nx = Flatten()(base_model.output)\nx = Dense(1024, activation=\"relu\")(x)\npredictions = Dense(10, activation=\"softmax\")(x)\n# Yeni modelin oluşturulması\nmodel = Model(inputs=base_model.input, outputs=predictions)\n# Önceden eğitilmiş katmanları dondurma (bunlar eğitilmeyecek)\nfor layer in base_model.layers:\n    layer.trainable = False",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "x = Flatten()(base_model.output)\nx = Dense(1024, activation=\"relu\")(x)\npredictions = Dense(10, activation=\"softmax\")(x)\n# Yeni modelin oluşturulması\nmodel = Model(inputs=base_model.input, outputs=predictions)\n# Önceden eğitilmiş katmanları dondurma (bunlar eğitilmeyecek)\nfor layer in base_model.layers:\n    layer.trainable = False\n# Modelin derlenmesi\nmodel.compile(optimizer=\"adam\", loss=\"categorical_crossentropy\", metrics=[\"accuracy\"])",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "x = Dense(1024, activation=\"relu\")(x)\npredictions = Dense(10, activation=\"softmax\")(x)\n# Yeni modelin oluşturulması\nmodel = Model(inputs=base_model.input, outputs=predictions)\n# Önceden eğitilmiş katmanları dondurma (bunlar eğitilmeyecek)\nfor layer in base_model.layers:\n    layer.trainable = False\n# Modelin derlenmesi\nmodel.compile(optimizer=\"adam\", loss=\"categorical_crossentropy\", metrics=[\"accuracy\"])\n# ImageDataGenerator ile veri artırma (data augmentation)",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "predictions",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "predictions = Dense(10, activation=\"softmax\")(x)\n# Yeni modelin oluşturulması\nmodel = Model(inputs=base_model.input, outputs=predictions)\n# Önceden eğitilmiş katmanları dondurma (bunlar eğitilmeyecek)\nfor layer in base_model.layers:\n    layer.trainable = False\n# Modelin derlenmesi\nmodel.compile(optimizer=\"adam\", loss=\"categorical_crossentropy\", metrics=[\"accuracy\"])\n# ImageDataGenerator ile veri artırma (data augmentation)\ntrain_datagen = ImageDataGenerator(",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "model = Model(inputs=base_model.input, outputs=predictions)\n# Önceden eğitilmiş katmanları dondurma (bunlar eğitilmeyecek)\nfor layer in base_model.layers:\n    layer.trainable = False\n# Modelin derlenmesi\nmodel.compile(optimizer=\"adam\", loss=\"categorical_crossentropy\", metrics=[\"accuracy\"])\n# ImageDataGenerator ile veri artırma (data augmentation)\ntrain_datagen = ImageDataGenerator(\n    rescale=1.0 / 255,\n    rotation_range=40,",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "train_datagen",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "train_datagen = ImageDataGenerator(\n    rescale=1.0 / 255,\n    rotation_range=40,\n    width_shift_range=0.2,\n    height_shift_range=0.2,\n    shear_range=0.2,\n    zoom_range=0.2,\n    horizontal_flip=True,\n)\n# Veri seti klasöründen veri yükleme ve model eğitimi",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "train_generator",
+        "kind": 5,
+        "importPath": "week4.computer_learning_exp",
+        "description": "week4.computer_learning_exp",
+        "peekOfCode": "train_generator = train_datagen.flow_from_directory(\n    \"path_to_train_data\",\n    target_size=(224, 224),\n    batch_size=32,\n    class_mode=\"categorical\",\n)\n# Modeli eğitme\nmodel.fit(train_generator, epochs=10)\n# Bu örnekte ResNet-50'yi kullanarak, görüntü sınıflandırması yapmak için transfer öğrenme yöntemi uygulanmıştır. Model, önceki ImageNet ağırlıklarıyla başlar ve yeni bir problem için ince ayar yapılır.\n# Computer Vision Uygulama Alanları:",
+        "detail": "week4.computer_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "X_train = X_train / 255.0\nX_test = X_test / 255.0\n# Verileri düzleştirme (28x28 boyutundaki görüntüler 784 boyutlu bir vektöre çevriliyor)\nX_train = X_train.reshape(-1, 28 * 28)\nX_test = X_test.reshape(-1, 28 * 28)\n# Modelin oluşturulması\nmodel = models.Sequential(\n    [\n        layers.Dense(128, activation=\"relu\", input_shape=(784,)),\n        layers.Dense(64, activation=\"relu\"),",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "X_test = X_test / 255.0\n# Verileri düzleştirme (28x28 boyutundaki görüntüler 784 boyutlu bir vektöre çevriliyor)\nX_train = X_train.reshape(-1, 28 * 28)\nX_test = X_test.reshape(-1, 28 * 28)\n# Modelin oluşturulması\nmodel = models.Sequential(\n    [\n        layers.Dense(128, activation=\"relu\", input_shape=(784,)),\n        layers.Dense(64, activation=\"relu\"),\n        layers.Dense(10, activation=\"softmax\"),  # 10 sınıf (0-9 arası rakamlar)",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "X_train = X_train.reshape(-1, 28 * 28)\nX_test = X_test.reshape(-1, 28 * 28)\n# Modelin oluşturulması\nmodel = models.Sequential(\n    [\n        layers.Dense(128, activation=\"relu\", input_shape=(784,)),\n        layers.Dense(64, activation=\"relu\"),\n        layers.Dense(10, activation=\"softmax\"),  # 10 sınıf (0-9 arası rakamlar)\n    ]\n)",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "X_test = X_test.reshape(-1, 28 * 28)\n# Modelin oluşturulması\nmodel = models.Sequential(\n    [\n        layers.Dense(128, activation=\"relu\", input_shape=(784,)),\n        layers.Dense(64, activation=\"relu\"),\n        layers.Dense(10, activation=\"softmax\"),  # 10 sınıf (0-9 arası rakamlar)\n    ]\n)\n# Modeli derleme (optimizasyon, kayıp fonksiyonu ve değerlendirme metriği seçilir)",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "model = models.Sequential(\n    [\n        layers.Dense(128, activation=\"relu\", input_shape=(784,)),\n        layers.Dense(64, activation=\"relu\"),\n        layers.Dense(10, activation=\"softmax\"),  # 10 sınıf (0-9 arası rakamlar)\n    ]\n)\n# Modeli derleme (optimizasyon, kayıp fonksiyonu ve değerlendirme metriği seçilir)\nmodel.compile(\n    optimizer=\"adam\", loss=\"sparse_categorical_crossentropy\", metrics=[\"accuracy\"]",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "predictions",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "predictions = model.predict(X_test)\npredicted_label = np.argmax(predictions[0])\nprint(f\"Tahmin edilen etiket: {predicted_label}\")\n# Kodun Açıklaması:\n# Veri Seti: MNIST veri seti, el yazısı rakamları içerir. Bu veri setinde her rakam 28x28 piksel boyutunda gri tonlamalı görüntülerden oluşur.\n# Model: Üç katmandan oluşan basit bir sinir ağı kurulmuştur:\n# İlk gizli katmanda 128 nöron vardır ve aktivasyon fonksiyonu olarak ReLU kullanılır.\n# İkinci gizli katmanda 64 nöron vardır ve yine ReLU kullanılır.\n# Son katman, 10 sınıf (0-9 arası rakamlar) için softmax fonksiyonunu kullanır.\n# Loss Function: sparse_categorical_crossentropy kullanılmıştır, çünkü sınıflandırma problemi vardır ve etiketler tam sayıdır.",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "predicted_label",
+        "kind": 5,
+        "importPath": "week4.deep_learning_exp",
+        "description": "week4.deep_learning_exp",
+        "peekOfCode": "predicted_label = np.argmax(predictions[0])\nprint(f\"Tahmin edilen etiket: {predicted_label}\")\n# Kodun Açıklaması:\n# Veri Seti: MNIST veri seti, el yazısı rakamları içerir. Bu veri setinde her rakam 28x28 piksel boyutunda gri tonlamalı görüntülerden oluşur.\n# Model: Üç katmandan oluşan basit bir sinir ağı kurulmuştur:\n# İlk gizli katmanda 128 nöron vardır ve aktivasyon fonksiyonu olarak ReLU kullanılır.\n# İkinci gizli katmanda 64 nöron vardır ve yine ReLU kullanılır.\n# Son katman, 10 sınıf (0-9 arası rakamlar) için softmax fonksiyonunu kullanır.\n# Loss Function: sparse_categorical_crossentropy kullanılmıştır, çünkü sınıflandırma problemi vardır ve etiketler tam sayıdır.\n# Optimizer: Adam optimizasyon algoritması kullanılmıştır.",
+        "detail": "week4.deep_learning_exp",
+        "documentation": {}
+    },
+    {
         "label": "iris",
         "kind": 5,
         "importPath": "week4.flower_classification",
@@ -1274,6 +1639,240 @@
         "description": "week4.flower_classification",
         "peekOfCode": "sample_predictions = model.predict(x_test[:3])\nprint(\"\\nSample predictions:\")\nfor i, pred in enumerate(sample_predictions):\n    print(f\"Example {i+1}: {pred}\")\n    print(f\"Predicted class: {np.argmax(pred)}\")\n    print(f\"Actual class: {np.argmax(y_test[i])}\")\n    print()",
         "detail": "week4.flower_classification",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "week4.nlp_learning_exp",
+        "description": "week4.nlp_learning_exp",
+        "peekOfCode": "stop_words = stopwords.words('english')\n# Veri seti: Basit bir olumlu ve olumsuz cümleler listesi\ntexts = [\n    \"I love this product, it is amazing!\",\n    \"This is the worst experience I've ever had.\",\n    \"I feel so happy using this service.\",\n    \"This product is terrible and disappointing.\",\n    \"Best purchase I've made, totally worth it!\",\n    \"Not satisfied at all, I want a refund.\",\n    \"The quality is excellent and I highly recommend it.\",",
+        "detail": "week4.nlp_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "texts",
+        "kind": 5,
+        "importPath": "week4.nlp_learning_exp",
+        "description": "week4.nlp_learning_exp",
+        "peekOfCode": "texts = [\n    \"I love this product, it is amazing!\",\n    \"This is the worst experience I've ever had.\",\n    \"I feel so happy using this service.\",\n    \"This product is terrible and disappointing.\",\n    \"Best purchase I've made, totally worth it!\",\n    \"Not satisfied at all, I want a refund.\",\n    \"The quality is excellent and I highly recommend it.\",\n    \"Awful service, never coming back again.\"\n]",
+        "detail": "week4.nlp_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "week4.nlp_learning_exp",
+        "description": "week4.nlp_learning_exp",
+        "peekOfCode": "labels = [1, 0, 1, 0, 1, 0, 1, 0]\n# TF-IDF ve Naive Bayes sınıflandırıcıyı içeren bir pipeline oluşturma\nmodel = make_pipeline(TfidfVectorizer(stop_words=stop_words), MultinomialNB())\n# Veriyi eğitim ve test setlerine bölme\nX_train, X_test, y_train, y_test = train_test_split(texts, labels, test_size=0.25, random_state=42)\n# Modeli eğitme\nmodel.fit(X_train, y_train)\n# Test verisi üzerinde tahmin yapma\ny_pred = model.predict(X_test)\n# Model doğruluğunu hesaplama",
+        "detail": "week4.nlp_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.nlp_learning_exp",
+        "description": "week4.nlp_learning_exp",
+        "peekOfCode": "model = make_pipeline(TfidfVectorizer(stop_words=stop_words), MultinomialNB())\n# Veriyi eğitim ve test setlerine bölme\nX_train, X_test, y_train, y_test = train_test_split(texts, labels, test_size=0.25, random_state=42)\n# Modeli eğitme\nmodel.fit(X_train, y_train)\n# Test verisi üzerinde tahmin yapma\ny_pred = model.predict(X_test)\n# Model doğruluğunu hesaplama\naccuracy = accuracy_score(y_test, y_pred)\nprint(f\"Model Doğruluğu: {accuracy * 100:.2f}%\")",
+        "detail": "week4.nlp_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "week4.nlp_learning_exp",
+        "description": "week4.nlp_learning_exp",
+        "peekOfCode": "y_pred = model.predict(X_test)\n# Model doğruluğunu hesaplama\naccuracy = accuracy_score(y_test, y_pred)\nprint(f\"Model Doğruluğu: {accuracy * 100:.2f}%\")\n# Test verilerinin tahmin edilen etiketleri\nfor i, text in enumerate(X_test):\n    print(f\"Metin: {text}\\nGerçek Etiket: {y_test[i]} - Tahmin Edilen Etiket: {y_pred[i]}\")\n# Kodun Açıklaması:\n# Veri Seti: Basit bir olumlu ve olumsuz cümlelerden oluşan küçük bir veri seti kullanıyoruz.\n# TF-IDF Vektörleştirme: TfidfVectorizer ile metinleri sayısal vektörlere dönüştürüyoruz. Bu yöntem, her kelimenin bir belgede ne kadar sık geçtiğini hesaplayarak metni temsil eder.",
+        "detail": "week4.nlp_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "week4.nlp_learning_exp",
+        "description": "week4.nlp_learning_exp",
+        "peekOfCode": "accuracy = accuracy_score(y_test, y_pred)\nprint(f\"Model Doğruluğu: {accuracy * 100:.2f}%\")\n# Test verilerinin tahmin edilen etiketleri\nfor i, text in enumerate(X_test):\n    print(f\"Metin: {text}\\nGerçek Etiket: {y_test[i]} - Tahmin Edilen Etiket: {y_pred[i]}\")\n# Kodun Açıklaması:\n# Veri Seti: Basit bir olumlu ve olumsuz cümlelerden oluşan küçük bir veri seti kullanıyoruz.\n# TF-IDF Vektörleştirme: TfidfVectorizer ile metinleri sayısal vektörlere dönüştürüyoruz. Bu yöntem, her kelimenin bir belgede ne kadar sık geçtiğini hesaplayarak metni temsil eder.\n# Naive Bayes: MultinomialNB sınıflandırıcısı, vektörleştirilen metinleri kullanarak sınıflandırma yapar.\n# Model Eğitimi ve Testi: Veriyi eğitim ve test kümelerine böldükten sonra model eğitilir. Ardından test verisi üzerinde tahminler yapılır.",
+        "detail": "week4.nlp_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "choose_action",
+        "kind": 2,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "def choose_action(position):\n    \"\"\"Epsilon-greedy stratejisiyle aksiyon seçimi.\"\"\"\n    if random.uniform(0, 1) < epsilon:\n        # Rastgele aksiyon (keşfetme)\n        return random.choice(actions)\n    else:\n        # En iyi aksiyon (kazanma)\n        state_actions = Q_table[position[0], position[1], :]\n        return actions[np.argmax(state_actions)]\ndef take_action(position, action):",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "take_action",
+        "kind": 2,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "def take_action(position, action):\n    \"\"\"Verilen aksiyona göre ajanı hareket ettirme.\"\"\"\n    new_position = position.copy()\n    if action == 'up' and position[0] > 0:\n        new_position[0] -= 1\n    elif action == 'down' and position[0] < 4:\n        new_position[0] += 1\n    elif action == 'left' and position[1] > 0:\n        new_position[1] -= 1\n    elif action == 'right' and position[1] < 4:",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "get_reward",
+        "kind": 2,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "def get_reward(position):\n    \"\"\"Ajanın ödülünü hesaplama.\"\"\"\n    if position == [4, 4]:\n        return 10\n    else:\n        return -0.1\n# Q-Learning algoritması\nfor episode in range(1000):\n    agent_position = [0, 0]  # Ajan her seferinde başlangıç noktasından başlar\n    while agent_position != [4, 4]:  # Ödül noktasına ulaşana kadar",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "environment",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "environment = np.zeros((5, 5))\n# Ödül noktası (4, 4)\nenvironment[4, 4] = 10  # Ödül\n# Hareket seçenekleri: yukarı, aşağı, sola, sağa\nactions = ['up', 'down', 'left', 'right']\n# Q-table (Q-değerleri saklanacak)\nQ_table = np.zeros((5, 5, len(actions)))\n# Öğrenme parametreleri\nalpha = 0.1  # Öğrenme hızı\ngamma = 0.9  # Gelecekteki ödüllere ne kadar değer verdiğimizi belirler",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "actions",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "actions = ['up', 'down', 'left', 'right']\n# Q-table (Q-değerleri saklanacak)\nQ_table = np.zeros((5, 5, len(actions)))\n# Öğrenme parametreleri\nalpha = 0.1  # Öğrenme hızı\ngamma = 0.9  # Gelecekteki ödüllere ne kadar değer verdiğimizi belirler\nepsilon = 0.8  # Keşfetme oranı (başlangıçta keşfetmeye daha çok odaklanır)\n# Ajanın başlangıç pozisyonu\nagent_position = [0, 0]\ndef choose_action(position):",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "Q_table",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "Q_table = np.zeros((5, 5, len(actions)))\n# Öğrenme parametreleri\nalpha = 0.1  # Öğrenme hızı\ngamma = 0.9  # Gelecekteki ödüllere ne kadar değer verdiğimizi belirler\nepsilon = 0.8  # Keşfetme oranı (başlangıçta keşfetmeye daha çok odaklanır)\n# Ajanın başlangıç pozisyonu\nagent_position = [0, 0]\ndef choose_action(position):\n    \"\"\"Epsilon-greedy stratejisiyle aksiyon seçimi.\"\"\"\n    if random.uniform(0, 1) < epsilon:",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "alpha",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "alpha = 0.1  # Öğrenme hızı\ngamma = 0.9  # Gelecekteki ödüllere ne kadar değer verdiğimizi belirler\nepsilon = 0.8  # Keşfetme oranı (başlangıçta keşfetmeye daha çok odaklanır)\n# Ajanın başlangıç pozisyonu\nagent_position = [0, 0]\ndef choose_action(position):\n    \"\"\"Epsilon-greedy stratejisiyle aksiyon seçimi.\"\"\"\n    if random.uniform(0, 1) < epsilon:\n        # Rastgele aksiyon (keşfetme)\n        return random.choice(actions)",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "gamma",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "gamma = 0.9  # Gelecekteki ödüllere ne kadar değer verdiğimizi belirler\nepsilon = 0.8  # Keşfetme oranı (başlangıçta keşfetmeye daha çok odaklanır)\n# Ajanın başlangıç pozisyonu\nagent_position = [0, 0]\ndef choose_action(position):\n    \"\"\"Epsilon-greedy stratejisiyle aksiyon seçimi.\"\"\"\n    if random.uniform(0, 1) < epsilon:\n        # Rastgele aksiyon (keşfetme)\n        return random.choice(actions)\n    else:",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "epsilon",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "epsilon = 0.8  # Keşfetme oranı (başlangıçta keşfetmeye daha çok odaklanır)\n# Ajanın başlangıç pozisyonu\nagent_position = [0, 0]\ndef choose_action(position):\n    \"\"\"Epsilon-greedy stratejisiyle aksiyon seçimi.\"\"\"\n    if random.uniform(0, 1) < epsilon:\n        # Rastgele aksiyon (keşfetme)\n        return random.choice(actions)\n    else:\n        # En iyi aksiyon (kazanma)",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "agent_position",
+        "kind": 5,
+        "importPath": "week4.reinforcement_learning_exp",
+        "description": "week4.reinforcement_learning_exp",
+        "peekOfCode": "agent_position = [0, 0]\ndef choose_action(position):\n    \"\"\"Epsilon-greedy stratejisiyle aksiyon seçimi.\"\"\"\n    if random.uniform(0, 1) < epsilon:\n        # Rastgele aksiyon (keşfetme)\n        return random.choice(actions)\n    else:\n        # En iyi aksiyon (kazanma)\n        state_actions = Q_table[position[0], position[1], :]\n        return actions[np.argmax(state_actions)]",
+        "detail": "week4.reinforcement_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "data = {\n    \"Feature1\": [2, 3, 5, 7, 8, 10, 12, 15, 18, 20],\n    \"Feature2\": [1, 4, 5, 8, 10, 13, 14, 16, 17, 19],\n    \"Label\": [0, 0, 0, 1, 0, 1, 1, 1, 1, 1],\n}\ndf = pd.DataFrame(data)\n# entry (X) ve output (y) variables\nX = df[[\"Feature1\", \"Feature2\"]]\ny = df[\"Label\"]\n# splitting education and test set",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "df = pd.DataFrame(data)\n# entry (X) ve output (y) variables\nX = df[[\"Feature1\", \"Feature2\"]]\ny = df[\"Label\"]\n# splitting education and test set\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.3, random_state=42\n)\n# Model creating and training\nmodel = LogisticRegression()",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "X = df[[\"Feature1\", \"Feature2\"]]\ny = df[\"Label\"]\n# splitting education and test set\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.3, random_state=42\n)\n# Model creating and training\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\n# guessing",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "y = df[\"Label\"]\n# splitting education and test set\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.3, random_state=42\n)\n# Model creating and training\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\n# guessing\ny_pred = model.predict(X_test)",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "model = LogisticRegression()\nmodel.fit(X_train, y_train)\n# guessing\ny_pred = model.predict(X_test)\n# model accuracy calculating\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Model accuracy: {:.2f}%\".format(accuracy * 100))",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "y_pred = model.predict(X_test)\n# model accuracy calculating\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Model accuracy: {:.2f}%\".format(accuracy * 100))",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "week4.supervised_learning_exp",
+        "description": "week4.supervised_learning_exp",
+        "peekOfCode": "accuracy = accuracy_score(y_test, y_pred)\nprint(\"Model accuracy: {:.2f}%\".format(accuracy * 100))",
+        "detail": "week4.supervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "week4.unsupervised_learning_exp",
+        "description": "week4.unsupervised_learning_exp",
+        "peekOfCode": "kmeans = KMeans(n_clusters=4)\nkmeans.fit(X)\n# to find which models with predict\ny_kmeans = kmeans.predict(X)\n# get center of cluster\ncenters = kmeans.cluster_centers_\n# make visualize\nplt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='viridis')\nplt.scatter(centers[:, 0], centers[:, 1], c='red', s=200, alpha=0.75, marker='X')\nplt.title('K-Means results')",
+        "detail": "week4.unsupervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "y_kmeans",
+        "kind": 5,
+        "importPath": "week4.unsupervised_learning_exp",
+        "description": "week4.unsupervised_learning_exp",
+        "peekOfCode": "y_kmeans = kmeans.predict(X)\n# get center of cluster\ncenters = kmeans.cluster_centers_\n# make visualize\nplt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='viridis')\nplt.scatter(centers[:, 0], centers[:, 1], c='red', s=200, alpha=0.75, marker='X')\nplt.title('K-Means results')\nplt.show()",
+        "detail": "week4.unsupervised_learning_exp",
+        "documentation": {}
+    },
+    {
+        "label": "centers",
+        "kind": 5,
+        "importPath": "week4.unsupervised_learning_exp",
+        "description": "week4.unsupervised_learning_exp",
+        "peekOfCode": "centers = kmeans.cluster_centers_\n# make visualize\nplt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='viridis')\nplt.scatter(centers[:, 0], centers[:, 1], c='red', s=200, alpha=0.75, marker='X')\nplt.title('K-Means results')\nplt.show()",
+        "detail": "week4.unsupervised_learning_exp",
         "documentation": {}
     },
     {
