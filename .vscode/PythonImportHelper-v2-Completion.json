@@ -1,11 +1,11 @@
 [
     {
-        "label": "random",
+        "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
@@ -18,12 +18,84 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
+        "label": "NearestNeighbors",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "NearestNeighbors",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "OneHotEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "OneHotEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "ColumnTransformer",
+        "importPath": "sklearn.compose",
+        "description": "sklearn.compose",
+        "isExtraImport": true,
+        "detail": "sklearn.compose",
+        "documentation": {}
+    },
+    {
+        "label": "Pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "make_pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "importPath": "sklearn.metrics.pairwise",
+        "description": "sklearn.metrics.pairwise",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics.pairwise",
+        "documentation": {}
+    },
+    {
+        "label": "random",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
         "documentation": {}
     },
     {
@@ -281,14 +353,6 @@
         "documentation": {}
     },
     {
-        "label": "make_pipeline",
-        "importPath": "sklearn.pipeline",
-        "description": "sklearn.pipeline",
-        "isExtraImport": true,
-        "detail": "sklearn.pipeline",
-        "documentation": {}
-    },
-    {
         "label": "accuracy_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
@@ -334,6 +398,96 @@
         "description": "sklearn.datasets",
         "isExtraImport": true,
         "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "BookData",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.advanced-ref",
+        "description": "projects-example.supervides-learning.advanced-ref",
+        "peekOfCode": "class BookData:\n    def __init__(self):\n        self.books_df = None\n        self.feature_matrix = None\n        self.preprocessor = None\n    def load_data(self):\n        self.books_df = pd.DataFrame({\n            'title': [\n                'The Hobbit', 'Dune', 'Mistborn', 'Neuromancer', 'The Name of the Wind',\n                'The Way of Kings', 'A Game of Thrones', 'The Colour of Magic', 'Assassin\\'s Apprentice',",
+        "detail": "projects-example.supervides-learning.advanced-ref",
+        "documentation": {}
+    },
+    {
+        "label": "UserData",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.advanced-ref",
+        "description": "projects-example.supervides-learning.advanced-ref",
+        "peekOfCode": "class UserData:\n    def __init__(self):\n        self.user_preferences = {}\n    def get_user_input(self):\n        print(\"Please rate your interest in the following subgenres (1-5):\")\n        subgenres = ['High Fantasy', 'Sci-Fi', 'Epic Fantasy', 'Cyberpunk', 'Comic Fantasy', 'Grimdark Fantasy']\n        for subgenre in subgenres:\n            while True:\n                try:\n                    rating = int(input(f\"{subgenre}: \"))",
+        "detail": "projects-example.supervides-learning.advanced-ref",
+        "documentation": {}
+    },
+    {
+        "label": "RecommendationModel",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.advanced-ref",
+        "description": "projects-example.supervides-learning.advanced-ref",
+        "peekOfCode": "class RecommendationModel:\n    def __init__(self, book_data):\n        self.book_data = book_data\n        self.model = None\n    def train_model(self):\n        # Use cosine similarity instead of Euclidean distance\n        self.model = cosine_similarity(self.book_data.feature_matrix)\n        print(\"Model trained successfully.\")\n    def get_recommendations(self, user_preferences):\n        # Create a user vector based on their preferences",
+        "detail": "projects-example.supervides-learning.advanced-ref",
+        "documentation": {}
+    },
+    {
+        "label": "UserInterface",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.advanced-ref",
+        "description": "projects-example.supervides-learning.advanced-ref",
+        "peekOfCode": "class UserInterface:\n    def __init__(self, recommendation_model, user_data):\n        self.recommendation_model = recommendation_model\n        self.user_data = user_data\n    def run(self):\n        print(\"Welcome to the Advanced Fantasy Book Recommender!\")\n        self.user_data.get_user_input()\n        recommendations = self.recommendation_model.get_recommendations(self.user_data.user_preferences)\n        print(\"\\nBased on your preferences, we recommend:\")\n        for i, book in enumerate(recommendations, 1):",
+        "detail": "projects-example.supervides-learning.advanced-ref",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "projects-example.supervides-learning.advanced-ref",
+        "description": "projects-example.supervides-learning.advanced-ref",
+        "peekOfCode": "def main():\n    # Initialize components\n    book_data = BookData()\n    user_data = UserData()\n    # Load and preprocess data\n    book_data.load_data()\n    book_data.preprocess_data()\n    # Initialize and train the model\n    recommendation_model = RecommendationModel(book_data)\n    recommendation_model.train_model()",
+        "detail": "projects-example.supervides-learning.advanced-ref",
+        "documentation": {}
+    },
+    {
+        "label": "BookData",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.MVP-ref",
+        "description": "projects-example.supervides-learning.MVP-ref",
+        "peekOfCode": "class BookData:\n    def __init__(self):\n        self.books_df = None\n        self.feature_matrix = None\n        self.encoder = None\n    def load_data(self):\n        # Ska egentligen ladda in data från databas med API, eller en fil\n        # Till vår prototyp börjar vi med att skapa eget litet dataset\n        self.books_df = pd.DataFrame({\n            'title': ['The Hobbit', 'Dune', 'Mistborn', 'Neuromancer', 'The Name of the Wind'],",
+        "detail": "projects-example.supervides-learning.MVP-ref",
+        "documentation": {}
+    },
+    {
+        "label": "UserData",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.MVP-ref",
+        "description": "projects-example.supervides-learning.MVP-ref",
+        "peekOfCode": "class UserData:\n    def __init__(self):\n        # Lagrar användarens preferenser. Implementeras i nästa iteration.\n        self.user_preferences = {}\n    def get_user_input(self):\n        # Just nu frågar vi bara efter en favorit-bok.\n        favorite_book = input(\"Enter the title of a fantasy book you enjoy: \")\n        return favorite_book\nclass RecommendationModel:\n    def __init__(self, book_data):",
+        "detail": "projects-example.supervides-learning.MVP-ref",
+        "documentation": {}
+    },
+    {
+        "label": "RecommendationModel",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.MVP-ref",
+        "description": "projects-example.supervides-learning.MVP-ref",
+        "peekOfCode": "class RecommendationModel:\n    def __init__(self, book_data):\n        self.book_data = book_data\n        self.model = None\n    def train_model(self):\n        # Initiera och träna modellen\n        self.model = NearestNeighbors(n_neighbors=3, metric='euclidean')\n        self.model.fit(self.book_data.feature_matrix)\n        print(\"Model trained successfully.\")\n    def get_recommendations(self, book_title):",
+        "detail": "projects-example.supervides-learning.MVP-ref",
+        "documentation": {}
+    },
+    {
+        "label": "UserInterface",
+        "kind": 6,
+        "importPath": "projects-example.supervides-learning.MVP-ref",
+        "description": "projects-example.supervides-learning.MVP-ref",
+        "peekOfCode": "class UserInterface:\n    def __init__(self, recommendation_model, user_data):\n        self.recommendation_model = recommendation_model\n        self.user_data = user_data\n    def run(self):\n        print(\"Welcome to the Fantasy Book Recommender!\")\n        favorite_book = self.user_data.get_user_input()\n        recommendations, explanations = self.recommendation_model.get_recommendations(favorite_book)\n        print(\"\\nBased on your favorite book, we recommend:\")\n        for book, explanation in zip(recommendations, explanations):",
+        "detail": "projects-example.supervides-learning.MVP-ref",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "projects-example.supervides-learning.MVP-ref",
+        "description": "projects-example.supervides-learning.MVP-ref",
+        "peekOfCode": "def main():\n    # Initiera komponenter\n    book_data = BookData()\n    user_data = UserData()\n    # Ladda in och preprocessa data\n    book_data.load_data()\n    book_data.preprocess_data()\n    # Initiera och träna modellen\n    recommendation_model = RecommendationModel(book_data)\n    recommendation_model.train_model()",
+        "detail": "projects-example.supervides-learning.MVP-ref",
         "documentation": {}
     },
     {
