@@ -58,6 +58,22 @@
         "documentation": {}
     },
     {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
         "label": "ColumnTransformer",
         "importPath": "sklearn.compose",
         "description": "sklearn.compose",
@@ -75,6 +91,14 @@
     },
     {
         "label": "make_pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "Pipeline",
         "importPath": "sklearn.pipeline",
         "description": "sklearn.pipeline",
         "isExtraImport": true,
@@ -328,6 +352,38 @@
         "documentation": {}
     },
     {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "KFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "nltk",
         "kind": 6,
         "isExtraImport": true,
@@ -369,6 +425,38 @@
         "documentation": {}
     },
     {
+        "label": "make_scorer",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -398,6 +486,22 @@
         "description": "sklearn.datasets",
         "isExtraImport": true,
         "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
         "documentation": {}
     },
     {
@@ -2081,6 +2185,159 @@
         "description": "week4.untitled12",
         "peekOfCode": "y_pred = model2.predict(np.array([49]))\ny_pred",
         "detail": "week4.untitled12",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_data",
+        "kind": 2,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "def preprocess_data(df):\n    # Skapa kopior för att undvika varningar\n    df_processed = df.copy()\n    # Label Encoding för kategoriska variabler\n    le = LabelEncoder()\n    categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\n    for col in categorical_columns:\n        df_processed[col] = le.fit_transform(df_processed[col])\n    return df_processed\n# Förbereder data",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_cross_validation",
+        "kind": 2,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "def evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']\n    else:\n        scoring = ['accuracy', 'precision_weighted', 'recall_weighted', 'f1_weighted']\n        score_Car_Names = ['Accuracy', 'Precision', 'Recall', 'F1 Score']\n    # Utför cross-validation för varje metric\n    cv_results = {}",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "perform_grid_search",
+        "kind": 2,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "def perform_grid_search(X, y, is_regression=False):\n    # Definiera pipeline\n    pipeline = Pipeline([\n        ('scaler', StandardScaler()),\n        ('model', RandomForestClassifier() if not is_regression else RandomForestRegressor())\n    ])\n    # Definiera parameter grid\n    param_grid = {\n        'model__n_estimators': [100, 200, 300],\n        'model__max_depth': [10, 20, 30, None],",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_feature_importance",
+        "kind": 2,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "def analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({\n        'feature': feature_Car_Names,\n        'importance': model.Car_Named_steps['model'].feature_importances_\n    }).sort_values('importance', ascending=False)\n    plt.figure(figsize=(12, 6))\n    sns.barplot(data=importances, x='importance', y='feature')\n    plt.title('Feature Importance')\n    plt.tight_layout()\n    plt.show()",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "url = \"https://raw.githubusercontent.com/sachin365123/CSV-files-for-Data-Science-and-Machine-Learning/refs/heads/main/car.csv\"\ndf = pd.read_csv(url)\n# Dataförbehandling\ndef preprocess_data(df):\n    # Skapa kopior för att undvika varningar\n    df_processed = df.copy()\n    # Label Encoding för kategoriska variabler\n    le = LabelEncoder()\n    categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\n    for col in categorical_columns:",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "df = pd.read_csv(url)\n# Dataförbehandling\ndef preprocess_data(df):\n    # Skapa kopior för att undvika varningar\n    df_processed = df.copy()\n    # Label Encoding för kategoriska variabler\n    le = LabelEncoder()\n    categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\n    for col in categorical_columns:\n        df_processed[col] = le.fit_transform(df_processed[col])",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "df_processed",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "df_processed = preprocess_data(df)\n# Definiera features och target för olika scenarier\n# 1. Prediktion av bränsletyp\nX_fuel = df_processed.drop(['Fuel_Type'], axis=1)\ny_fuel = df_processed['Fuel_Type']\n# 2. Prediktion av pris\nX_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "X_fuel",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "X_fuel = df_processed.drop(['Fuel_Type'], axis=1)\ny_fuel = df_processed['Fuel_Type']\n# 2. Prediktion av pris\nX_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "y_fuel",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "y_fuel = df_processed['Fuel_Type']\n# 2. Prediktion av pris\nX_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "X_price",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "X_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']\n    else:\n        scoring = ['accuracy', 'precision_weighted', 'recall_weighted', 'f1_weighted']",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "y_price",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "y_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']\n    else:\n        scoring = ['accuracy', 'precision_weighted', 'recall_weighted', 'f1_weighted']\n        score_Car_Names = ['Accuracy', 'Precision', 'Recall', 'F1 Score']",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "fuel_model",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "fuel_model = RandomForestClassifier(random_state=42)\nevaluate_cross_validation(X_fuel, y_fuel, fuel_model)\nprint(\"\\nEvaluating Price Prediction Model:\")\nprice_model = RandomForestRegressor(random_state=42)\nevaluate_cross_validation(X_price, y_price, price_model, is_regression=True)\n# Utför grid search för båda modellerna\nprint(\"\\nOptimizing Fuel Type Prediction Model:\")\nbest_fuel_model = perform_grid_search(X_fuel, y_fuel)\nprint(\"\\nOptimizing Price Prediction Model:\")\nbest_price_model = perform_grid_search(X_price, y_price, is_regression=True)",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "price_model",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "price_model = RandomForestRegressor(random_state=42)\nevaluate_cross_validation(X_price, y_price, price_model, is_regression=True)\n# Utför grid search för båda modellerna\nprint(\"\\nOptimizing Fuel Type Prediction Model:\")\nbest_fuel_model = perform_grid_search(X_fuel, y_fuel)\nprint(\"\\nOptimizing Price Prediction Model:\")\nbest_price_model = perform_grid_search(X_price, y_price, is_regression=True)\n# Feature importance analys\ndef analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "best_fuel_model",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "best_fuel_model = perform_grid_search(X_fuel, y_fuel)\nprint(\"\\nOptimizing Price Prediction Model:\")\nbest_price_model = perform_grid_search(X_price, y_price, is_regression=True)\n# Feature importance analys\ndef analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({\n        'feature': feature_Car_Names,\n        'importance': model.Car_Named_steps['model'].feature_importances_\n    }).sort_values('importance', ascending=False)\n    plt.figure(figsize=(12, 6))",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "best_price_model",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "best_price_model = perform_grid_search(X_price, y_price, is_regression=True)\n# Feature importance analys\ndef analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({\n        'feature': feature_Car_Names,\n        'importance': model.Car_Named_steps['model'].feature_importances_\n    }).sort_values('importance', ascending=False)\n    plt.figure(figsize=(12, 6))\n    sns.barplot(data=importances, x='importance', y='feature')\n    plt.title('Feature Importance')",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "fuel_importance",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "fuel_importance = analyze_feature_importance(best_fuel_model, X_fuel.columns)\nprint(\"\\nTop 5 Most Important Features for Fuel Type:\")\nprint(fuel_importance.head())\nprint(\"\\nAnalyzing Feature Importance for Price Prediction:\")\nprice_importance = analyze_feature_importance(best_price_model, X_price.columns)\nprint(\"\\nTop 5 Most Important Features for Price:\")\nprint(price_importance.head())",
+        "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "price_importance",
+        "kind": 5,
+        "importPath": "week6.project",
+        "description": "week6.project",
+        "peekOfCode": "price_importance = analyze_feature_importance(best_price_model, X_price.columns)\nprint(\"\\nTop 5 Most Important Features for Price:\")\nprint(price_importance.head())",
+        "detail": "week6.project",
         "documentation": {}
     }
 ]
