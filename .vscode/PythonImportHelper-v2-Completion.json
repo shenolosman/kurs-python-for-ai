@@ -66,14 +66,6 @@
         "documentation": {}
     },
     {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
         "label": "ColumnTransformer",
         "importPath": "sklearn.compose",
         "description": "sklearn.compose",
@@ -91,14 +83,6 @@
     },
     {
         "label": "make_pipeline",
-        "importPath": "sklearn.pipeline",
-        "description": "sklearn.pipeline",
-        "isExtraImport": true,
-        "detail": "sklearn.pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "Pipeline",
         "importPath": "sklearn.pipeline",
         "description": "sklearn.pipeline",
         "isExtraImport": true,
@@ -352,38 +336,6 @@
         "documentation": {}
     },
     {
-        "label": "cross_val_score",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "KFold",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "GridSearchCV",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
         "label": "nltk",
         "kind": 6,
         "isExtraImport": true,
@@ -425,38 +377,6 @@
         "documentation": {}
     },
     {
-        "label": "make_scorer",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "accuracy_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "mean_squared_error",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "r2_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -489,19 +409,37 @@
         "documentation": {}
     },
     {
-        "label": "RandomForestClassifier",
-        "importPath": "sklearn.ensemble",
-        "description": "sklearn.ensemble",
+        "label": "gymnasium",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sklearn.ensemble",
+        "importPath": "gymnasium",
+        "description": "gymnasium",
+        "detail": "gymnasium",
         "documentation": {}
     },
     {
-        "label": "RandomForestRegressor",
-        "importPath": "sklearn.ensemble",
-        "description": "sklearn.ensemble",
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
         "isExtraImport": true,
-        "detail": "sklearn.ensemble",
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -2188,39 +2126,57 @@
         "documentation": {}
     },
     {
-        "label": "preprocess_data",
-        "kind": 2,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "def preprocess_data(df):\n    # Skapa kopior för att undvika varningar\n    df_processed = df.copy()\n    # Label Encoding för kategoriska variabler\n    le = LabelEncoder()\n    categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\n    for col in categorical_columns:\n        df_processed[col] = le.fit_transform(df_processed[col])\n    return df_processed\n# Förbereder data",
-        "detail": "week6.project",
+        "label": "ResourceManager",
+        "kind": 6,
+        "importPath": "week6.exp.resourceManagerAI",
+        "description": "week6.exp.resourceManagerAI",
+        "peekOfCode": "class ResourceManager(gym.Env):\n    \"\"\"\n    Miljö där en agent ska hantera resurser (t.ex. serverkapacitet)\n    för att möta varierande efterfrågan till lägsta möjliga kostnad.\n    \"\"\"\n    def __init__(self):\n        # Tillstånd: (nuvarande_kapacitet, nuvarande_efterfrågan)\n        self.observation_space = gym.spaces.Discrete(50)  # 5 kapacitetsnivåer * 10 efterfrågansnivåer\n        # Handlingar: minska kapacitet (-1), behåll (0), öka kapacitet (+1)\n        self.action_space = gym.spaces.Discrete(3)",
+        "detail": "week6.exp.resourceManagerAI",
         "documentation": {}
     },
     {
-        "label": "evaluate_cross_validation",
+        "label": "train_resource_manager",
         "kind": 2,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "def evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']\n    else:\n        scoring = ['accuracy', 'precision_weighted', 'recall_weighted', 'f1_weighted']\n        score_Car_Names = ['Accuracy', 'Precision', 'Recall', 'F1 Score']\n    # Utför cross-validation för varje metric\n    cv_results = {}",
-        "detail": "week6.project",
+        "importPath": "week6.exp.resourceManagerAI",
+        "description": "week6.exp.resourceManagerAI",
+        "peekOfCode": "def train_resource_manager(episodes=1000):\n    \"\"\"\n    Tränar en Q-learning agent för ResourceManager-miljön\n    \"\"\"\n    env = ResourceManager()\n    # Initialisera Q-tabell\n    q_table = defaultdict(lambda: np.zeros(3))  # 3 möjliga handlingar\n    # Hyperparametrar\n    learning_rate = 0.1\n    discount_factor = 0.95",
+        "detail": "week6.exp.resourceManagerAI",
         "documentation": {}
     },
     {
-        "label": "perform_grid_search",
-        "kind": 2,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "def perform_grid_search(X, y, is_regression=False):\n    # Definiera pipeline\n    pipeline = Pipeline([\n        ('scaler', StandardScaler()),\n        ('model', RandomForestClassifier() if not is_regression else RandomForestRegressor())\n    ])\n    # Definiera parameter grid\n    param_grid = {\n        'model__n_estimators': [100, 200, 300],\n        'model__max_depth': [10, 20, 30, None],",
-        "detail": "week6.project",
+        "label": "SimpleTaxi",
+        "kind": 6,
+        "importPath": "week6.exp.taxiDriverAI",
+        "description": "week6.exp.taxiDriverAI",
+        "peekOfCode": "class SimpleTaxi(gym.Env):\n    \"\"\"\n    Enkel taxivärld där en taxi ska plocka upp en passagerare och lämna av den.\n    Världen är ett 5x5 rutnät med fyra möjliga upphämtningsplatser (R, G, B, Y).\n    \"\"\"\n    def __init__(self):\n        # Världen är 5x5, taxi kan vara på vilken ruta som helst\n        # För varje ruta kan passageraren vara på 4 olika platser eller i taxin\n        # Passageraren ska till någon av de 4 platserna\n        self.observation_space = gym.spaces.Discrete(5 * 5 * 5 * 4)",
+        "detail": "week6.exp.taxiDriverAI",
         "documentation": {}
     },
     {
-        "label": "analyze_feature_importance",
+        "label": "visualize_taxi",
         "kind": 2,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "def analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({\n        'feature': feature_Car_Names,\n        'importance': model.Car_Named_steps['model'].feature_importances_\n    }).sort_values('importance', ascending=False)\n    plt.figure(figsize=(12, 6))\n    sns.barplot(data=importances, x='importance', y='feature')\n    plt.title('Feature Importance')\n    plt.tight_layout()\n    plt.show()",
-        "detail": "week6.project",
+        "importPath": "week6.exp.taxiDriverAI",
+        "description": "week6.exp.taxiDriverAI",
+        "peekOfCode": "def visualize_taxi(env):\n    \"\"\"\n    Skapar en textbaserad visualisering av taxi-miljön\n    \"\"\"\n    # Skapa en representation av världen\n    world = [['░' for _ in range(5)] for _ in range(5)]\n    # Markera platserna\n    locations = {\n        0: 'R',  # Röd plats\n        1: 'G',  # Grön plats",
+        "detail": "week6.exp.taxiDriverAI",
+        "documentation": {}
+    },
+    {
+        "label": "train_taxi_driver",
+        "kind": 2,
+        "importPath": "week6.exp.taxiDriverAI",
+        "description": "week6.exp.taxiDriverAI",
+        "peekOfCode": "def train_taxi_driver(episodes=2000, render=False):  # Öka antal episoder\n    \"\"\"\n    Tränar en Q-learning agent för taxi-miljön med förbättrade parametrar\n    \"\"\"\n    env = SimpleTaxi()\n    # Initialisera Q-tabell med små slumpmässiga värden istället för nollor\n    q_table = defaultdict(lambda: np.random.uniform(low=-1, high=1, size=6))\n    # Justerade hyperparametrar\n    learning_rate = 0.15\n    discount_factor = 0.99  # Öka för att värdera framtida belöningar högre",
+        "detail": "week6.exp.taxiDriverAI",
+        "documentation": {}
+    },
+    {
+        "label": "run_trained_taxi",
+        "kind": 2,
+        "importPath": "week6.exp.taxiDriverAI",
+        "description": "week6.exp.taxiDriverAI",
+        "peekOfCode": "def run_trained_taxi(q_table, episodes=5):\n    \"\"\"\n    Kör den tränade taxin några episoder för demonstration\n    \"\"\"\n    env = SimpleTaxi()\n    for episode in range(episodes):\n        state, _ = env.reset()\n        total_reward = 0\n        steps = 0\n        print(f\"\\nEpisod {episode + 1}\")",
+        "detail": "week6.exp.taxiDriverAI",
         "documentation": {}
     },
     {
@@ -2228,7 +2184,7 @@
         "kind": 5,
         "importPath": "week6.project",
         "description": "week6.project",
-        "peekOfCode": "url = \"https://raw.githubusercontent.com/sachin365123/CSV-files-for-Data-Science-and-Machine-Learning/refs/heads/main/car.csv\"\ndf = pd.read_csv(url)\n# Dataförbehandling\ndef preprocess_data(df):\n    # Skapa kopior för att undvika varningar\n    df_processed = df.copy()\n    # Label Encoding för kategoriska variabler\n    le = LabelEncoder()\n    categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\n    for col in categorical_columns:",
+        "peekOfCode": "url = \"https://raw.githubusercontent.com/sachin365123/CSV-files-for-Data-Science-and-Machine-Learning/refs/heads/main/car.csv\"\ndf = pd.read_csv(url)\n# Grundläggande dataanalys\nprint(\"Dataset Information:\")\nprint(\"-\" * 50)\nprint(\"\\nDataset Shape:\", df.shape)\nprint(\"\\nColumns:\", df.columns.tolist())\nprint(\"\\nData Types:\")\nprint(df.dtypes)\nprint(\"\\nNull Values:\")",
         "detail": "week6.project",
         "documentation": {}
     },
@@ -2237,106 +2193,43 @@
         "kind": 5,
         "importPath": "week6.project",
         "description": "week6.project",
-        "peekOfCode": "df = pd.read_csv(url)\n# Dataförbehandling\ndef preprocess_data(df):\n    # Skapa kopior för att undvika varningar\n    df_processed = df.copy()\n    # Label Encoding för kategoriska variabler\n    le = LabelEncoder()\n    categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\n    for col in categorical_columns:\n        df_processed[col] = le.fit_transform(df_processed[col])",
+        "peekOfCode": "df = pd.read_csv(url)\n# Grundläggande dataanalys\nprint(\"Dataset Information:\")\nprint(\"-\" * 50)\nprint(\"\\nDataset Shape:\", df.shape)\nprint(\"\\nColumns:\", df.columns.tolist())\nprint(\"\\nData Types:\")\nprint(df.dtypes)\nprint(\"\\nNull Values:\")\nprint(df.isnull().sum())",
         "detail": "week6.project",
         "documentation": {}
     },
     {
-        "label": "df_processed",
+        "label": "le",
         "kind": 5,
         "importPath": "week6.project",
         "description": "week6.project",
-        "peekOfCode": "df_processed = preprocess_data(df)\n# Definiera features och target för olika scenarier\n# 1. Prediktion av bränsletyp\nX_fuel = df_processed.drop(['Fuel_Type'], axis=1)\ny_fuel = df_processed['Fuel_Type']\n# 2. Prediktion av pris\nX_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):",
+        "peekOfCode": "le = LabelEncoder()\ndf_encoded = df.copy()\ncategorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\nfor col in categorical_columns:\n    df_encoded[col] = le.fit_transform(df_encoded[col])\n# Visa korrelationsmatris\nplt.figure(figsize=(12, 8))\nsns.heatmap(df_encoded.corr(), annot=True, cmap='coolwarm', fmt='.2f')\nplt.title('Correlation Matrix')\nplt.tight_layout()",
         "detail": "week6.project",
         "documentation": {}
     },
     {
-        "label": "X_fuel",
+        "label": "df_encoded",
         "kind": 5,
         "importPath": "week6.project",
         "description": "week6.project",
-        "peekOfCode": "X_fuel = df_processed.drop(['Fuel_Type'], axis=1)\ny_fuel = df_processed['Fuel_Type']\n# 2. Prediktion av pris\nX_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']",
+        "peekOfCode": "df_encoded = df.copy()\ncategorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\nfor col in categorical_columns:\n    df_encoded[col] = le.fit_transform(df_encoded[col])\n# Visa korrelationsmatris\nplt.figure(figsize=(12, 8))\nsns.heatmap(df_encoded.corr(), annot=True, cmap='coolwarm', fmt='.2f')\nplt.title('Correlation Matrix')\nplt.tight_layout()\nplt.show()",
         "detail": "week6.project",
         "documentation": {}
     },
     {
-        "label": "y_fuel",
+        "label": "categorical_columns",
         "kind": 5,
         "importPath": "week6.project",
         "description": "week6.project",
-        "peekOfCode": "y_fuel = df_processed['Fuel_Type']\n# 2. Prediktion av pris\nX_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']",
+        "peekOfCode": "categorical_columns = ['Car_Name', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner']\nfor col in categorical_columns:\n    df_encoded[col] = le.fit_transform(df_encoded[col])\n# Visa korrelationsmatris\nplt.figure(figsize=(12, 8))\nsns.heatmap(df_encoded.corr(), annot=True, cmap='coolwarm', fmt='.2f')\nplt.title('Correlation Matrix')\nplt.tight_layout()\nplt.show()\n# Skriv ut sammanfattande statistik",
         "detail": "week6.project",
         "documentation": {}
     },
     {
-        "label": "X_price",
+        "label": "numerical_columns",
         "kind": 5,
         "importPath": "week6.project",
         "description": "week6.project",
-        "peekOfCode": "X_price = df_processed.drop(['Seller_Type'], axis=1)\ny_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']\n    else:\n        scoring = ['accuracy', 'precision_weighted', 'recall_weighted', 'f1_weighted']",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "y_price",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "y_price = df_processed['Seller_Type']\n# Funktion för att utvärdera och visualisera cross-validation resultat\ndef evaluate_cross_validation(X, y, model, cv_splits=5, is_regression=False):\n    # Definiera scoring metrics\n    if is_regression:\n        scoring = ['r2', 'neg_mean_squared_error']\n        score_Car_Names = ['R² Score', 'Negative MSE']\n    else:\n        scoring = ['accuracy', 'precision_weighted', 'recall_weighted', 'f1_weighted']\n        score_Car_Names = ['Accuracy', 'Precision', 'Recall', 'F1 Score']",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "fuel_model",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "fuel_model = RandomForestClassifier(random_state=42)\nevaluate_cross_validation(X_fuel, y_fuel, fuel_model)\nprint(\"\\nEvaluating Price Prediction Model:\")\nprice_model = RandomForestRegressor(random_state=42)\nevaluate_cross_validation(X_price, y_price, price_model, is_regression=True)\n# Utför grid search för båda modellerna\nprint(\"\\nOptimizing Fuel Type Prediction Model:\")\nbest_fuel_model = perform_grid_search(X_fuel, y_fuel)\nprint(\"\\nOptimizing Price Prediction Model:\")\nbest_price_model = perform_grid_search(X_price, y_price, is_regression=True)",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "price_model",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "price_model = RandomForestRegressor(random_state=42)\nevaluate_cross_validation(X_price, y_price, price_model, is_regression=True)\n# Utför grid search för båda modellerna\nprint(\"\\nOptimizing Fuel Type Prediction Model:\")\nbest_fuel_model = perform_grid_search(X_fuel, y_fuel)\nprint(\"\\nOptimizing Price Prediction Model:\")\nbest_price_model = perform_grid_search(X_price, y_price, is_regression=True)\n# Feature importance analys\ndef analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "best_fuel_model",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "best_fuel_model = perform_grid_search(X_fuel, y_fuel)\nprint(\"\\nOptimizing Price Prediction Model:\")\nbest_price_model = perform_grid_search(X_price, y_price, is_regression=True)\n# Feature importance analys\ndef analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({\n        'feature': feature_Car_Names,\n        'importance': model.Car_Named_steps['model'].feature_importances_\n    }).sort_values('importance', ascending=False)\n    plt.figure(figsize=(12, 6))",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "best_price_model",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "best_price_model = perform_grid_search(X_price, y_price, is_regression=True)\n# Feature importance analys\ndef analyze_feature_importance(model, feature_Car_Names):\n    importances = pd.DataFrame({\n        'feature': feature_Car_Names,\n        'importance': model.Car_Named_steps['model'].feature_importances_\n    }).sort_values('importance', ascending=False)\n    plt.figure(figsize=(12, 6))\n    sns.barplot(data=importances, x='importance', y='feature')\n    plt.title('Feature Importance')",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "fuel_importance",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "fuel_importance = analyze_feature_importance(best_fuel_model, X_fuel.columns)\nprint(\"\\nTop 5 Most Important Features for Fuel Type:\")\nprint(fuel_importance.head())\nprint(\"\\nAnalyzing Feature Importance for Price Prediction:\")\nprice_importance = analyze_feature_importance(best_price_model, X_price.columns)\nprint(\"\\nTop 5 Most Important Features for Price:\")\nprint(price_importance.head())",
-        "detail": "week6.project",
-        "documentation": {}
-    },
-    {
-        "label": "price_importance",
-        "kind": 5,
-        "importPath": "week6.project",
-        "description": "week6.project",
-        "peekOfCode": "price_importance = analyze_feature_importance(best_price_model, X_price.columns)\nprint(\"\\nTop 5 Most Important Features for Price:\")\nprint(price_importance.head())",
+        "peekOfCode": "numerical_columns = ['Year', 'Selling_Price', 'Kms_Driven']\nfor col in numerical_columns:\n    q1 = df[col].quantile(0.25)\n    q3 = df[col].quantile(0.75)\n    iqr = q3 - q1\n    lower_bound = q1 - 1.5 * iqr\n    upper_bound = q3 + 1.5 * iqr\n    outliers = df[(df[col] < lower_bound) | (df[col] > upper_bound)][col]\n    print(f\"\\nOutliers in {col}:\")\n    print(f\"Number of outliers: {len(outliers)}\")",
         "detail": "week6.project",
         "documentation": {}
     }
