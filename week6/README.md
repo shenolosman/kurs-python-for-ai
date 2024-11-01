@@ -184,3 +184,5 @@ class QLearning:
 
 
 ![q-learning](image.png)
+![q-learning](reinforcement-learning.png)
+
