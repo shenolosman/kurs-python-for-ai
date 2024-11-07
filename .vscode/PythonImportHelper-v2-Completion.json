@@ -465,6 +465,14 @@
         "documentation": {}
     },
     {
+        "label": "load_digits",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
         "label": "gymnasium",
         "kind": 6,
         "isExtraImport": true,
@@ -496,6 +504,38 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "TSNE",
+        "importPath": "sklearn.manifold",
+        "description": "sklearn.manifold",
+        "isExtraImport": true,
+        "detail": "sklearn.manifold",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianMixture",
+        "importPath": "sklearn.mixture",
+        "description": "sklearn.mixture",
+        "isExtraImport": true,
+        "detail": "sklearn.mixture",
+        "documentation": {}
+    },
+    {
+        "label": "apriori",
+        "importPath": "mlxtend.frequent_patterns",
+        "description": "mlxtend.frequent_patterns",
+        "isExtraImport": true,
+        "detail": "mlxtend.frequent_patterns",
+        "documentation": {}
+    },
+    {
+        "label": "association_rules",
+        "importPath": "mlxtend.frequent_patterns",
+        "description": "mlxtend.frequent_patterns",
+        "isExtraImport": true,
+        "detail": "mlxtend.frequent_patterns",
         "documentation": {}
     },
     {
@@ -2436,6 +2476,177 @@
         "description": "week6.project",
         "peekOfCode": "numerical_columns = ['Year', 'Selling_Price', 'Kms_Driven']\nfor col in numerical_columns:\n    q1 = df[col].quantile(0.25)\n    q3 = df[col].quantile(0.75)\n    iqr = q3 - q1\n    lower_bound = q1 - 1.5 * iqr\n    upper_bound = q3 + 1.5 * iqr\n    outliers = df[(df[col] < lower_bound) | (df[col] > upper_bound)][col]\n    print(f\"\\nOutliers in {col}:\")\n    print(f\"Number of outliers: {len(outliers)}\")",
         "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "digits",
+        "kind": 5,
+        "importPath": "week8.exp.dimReduction",
+        "description": "week8.exp.dimReduction",
+        "peekOfCode": "digits = load_digits()\nX = digits.data # 64-dimensionellt dataset\ny = digits.target\n# Applicera t-SNE för att reducera dimensionen till 2D\ntsne = TSNE(n_components=2, perplexity=30, learning_rate=200, n_iter=1000, random_state=42)\nX_reduced = tsne.fit_transform(X)\n# Visualisera 2D-projektionen med färg-kodade kluster\nplt.figure(figsize=(12, 8))\nscatter = plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap='Spectral', alpha=0.7)\nplt.colorbar(scatter, label='Digit')",
+        "detail": "week8.exp.dimReduction",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "week8.exp.dimReduction",
+        "description": "week8.exp.dimReduction",
+        "peekOfCode": "X = digits.data # 64-dimensionellt dataset\ny = digits.target\n# Applicera t-SNE för att reducera dimensionen till 2D\ntsne = TSNE(n_components=2, perplexity=30, learning_rate=200, n_iter=1000, random_state=42)\nX_reduced = tsne.fit_transform(X)\n# Visualisera 2D-projektionen med färg-kodade kluster\nplt.figure(figsize=(12, 8))\nscatter = plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap='Spectral', alpha=0.7)\nplt.colorbar(scatter, label='Digit')\nplt.title(\"t-SNE Visualization of the MNIST Digits Dataset\")",
+        "detail": "week8.exp.dimReduction",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "week8.exp.dimReduction",
+        "description": "week8.exp.dimReduction",
+        "peekOfCode": "y = digits.target\n# Applicera t-SNE för att reducera dimensionen till 2D\ntsne = TSNE(n_components=2, perplexity=30, learning_rate=200, n_iter=1000, random_state=42)\nX_reduced = tsne.fit_transform(X)\n# Visualisera 2D-projektionen med färg-kodade kluster\nplt.figure(figsize=(12, 8))\nscatter = plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap='Spectral', alpha=0.7)\nplt.colorbar(scatter, label='Digit')\nplt.title(\"t-SNE Visualization of the MNIST Digits Dataset\")\nplt.xlabel(\"t-SNE Dimension 1\")",
+        "detail": "week8.exp.dimReduction",
+        "documentation": {}
+    },
+    {
+        "label": "tsne",
+        "kind": 5,
+        "importPath": "week8.exp.dimReduction",
+        "description": "week8.exp.dimReduction",
+        "peekOfCode": "tsne = TSNE(n_components=2, perplexity=30, learning_rate=200, n_iter=1000, random_state=42)\nX_reduced = tsne.fit_transform(X)\n# Visualisera 2D-projektionen med färg-kodade kluster\nplt.figure(figsize=(12, 8))\nscatter = plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap='Spectral', alpha=0.7)\nplt.colorbar(scatter, label='Digit')\nplt.title(\"t-SNE Visualization of the MNIST Digits Dataset\")\nplt.xlabel(\"t-SNE Dimension 1\")\nplt.ylabel(\"t-SNE Dimension 2\")\nplt.show()",
+        "detail": "week8.exp.dimReduction",
+        "documentation": {}
+    },
+    {
+        "label": "X_reduced",
+        "kind": 5,
+        "importPath": "week8.exp.dimReduction",
+        "description": "week8.exp.dimReduction",
+        "peekOfCode": "X_reduced = tsne.fit_transform(X)\n# Visualisera 2D-projektionen med färg-kodade kluster\nplt.figure(figsize=(12, 8))\nscatter = plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap='Spectral', alpha=0.7)\nplt.colorbar(scatter, label='Digit')\nplt.title(\"t-SNE Visualization of the MNIST Digits Dataset\")\nplt.xlabel(\"t-SNE Dimension 1\")\nplt.ylabel(\"t-SNE Dimension 2\")\nplt.show()",
+        "detail": "week8.exp.dimReduction",
+        "documentation": {}
+    },
+    {
+        "label": "scatter",
+        "kind": 5,
+        "importPath": "week8.exp.dimReduction",
+        "description": "week8.exp.dimReduction",
+        "peekOfCode": "scatter = plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap='Spectral', alpha=0.7)\nplt.colorbar(scatter, label='Digit')\nplt.title(\"t-SNE Visualization of the MNIST Digits Dataset\")\nplt.xlabel(\"t-SNE Dimension 1\")\nplt.ylabel(\"t-SNE Dimension 2\")\nplt.show()",
+        "detail": "week8.exp.dimReduction",
+        "documentation": {}
+    },
+    {
+        "label": "X1",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "X1 = np.random.normal(loc=[5, 5], scale=1.5, size=(100, 2))\nX2 = np.random.normal(loc=[10, 10], scale=1.5, size=(100, 2))\nX3 = np.random.normal(loc=[5, 10], scale=1.5, size=(100, 2))\nX = np.vstack([X1, X2, X3])\n# Applicera GMM med 3 components\ngmm = GaussianMixture(n_components=3, covariance_type='full', random_state=42)\ngmm.fit(X)\nlabels = gmm.predict(X)\nprobs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "X2",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "X2 = np.random.normal(loc=[10, 10], scale=1.5, size=(100, 2))\nX3 = np.random.normal(loc=[5, 10], scale=1.5, size=(100, 2))\nX = np.vstack([X1, X2, X3])\n# Applicera GMM med 3 components\ngmm = GaussianMixture(n_components=3, covariance_type='full', random_state=42)\ngmm.fit(X)\nlabels = gmm.predict(X)\nprobs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet\nplt.figure(figsize=(10, 7))",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "X3",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "X3 = np.random.normal(loc=[5, 10], scale=1.5, size=(100, 2))\nX = np.vstack([X1, X2, X3])\n# Applicera GMM med 3 components\ngmm = GaussianMixture(n_components=3, covariance_type='full', random_state=42)\ngmm.fit(X)\nlabels = gmm.predict(X)\nprobs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet\nplt.figure(figsize=(10, 7))\nscatter = plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=30, edgecolor='k', alpha=0.7)",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "X = np.vstack([X1, X2, X3])\n# Applicera GMM med 3 components\ngmm = GaussianMixture(n_components=3, covariance_type='full', random_state=42)\ngmm.fit(X)\nlabels = gmm.predict(X)\nprobs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet\nplt.figure(figsize=(10, 7))\nscatter = plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=30, edgecolor='k', alpha=0.7)\nplt.colorbar(scatter, label='Cluster')",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "gmm",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "gmm = GaussianMixture(n_components=3, covariance_type='full', random_state=42)\ngmm.fit(X)\nlabels = gmm.predict(X)\nprobs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet\nplt.figure(figsize=(10, 7))\nscatter = plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=30, edgecolor='k', alpha=0.7)\nplt.colorbar(scatter, label='Cluster')\nplt.xlabel('Feature 1')\nplt.ylabel('Feature 2')",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "labels = gmm.predict(X)\nprobs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet\nplt.figure(figsize=(10, 7))\nscatter = plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=30, edgecolor='k', alpha=0.7)\nplt.colorbar(scatter, label='Cluster')\nplt.xlabel('Feature 1')\nplt.ylabel('Feature 2')\nplt.title(\"Gaussian Mixture Model Clustering with Soft Labels\")\nplt.show()",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "probs",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "probs = gmm.predict_proba(X)  # Get cluster membership probabilities\n# Plotta kluster med sannolikheter indikerade med färg-intensitet\nplt.figure(figsize=(10, 7))\nscatter = plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=30, edgecolor='k', alpha=0.7)\nplt.colorbar(scatter, label='Cluster')\nplt.xlabel('Feature 1')\nplt.ylabel('Feature 2')\nplt.title(\"Gaussian Mixture Model Clustering with Soft Labels\")\nplt.show()",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "scatter",
+        "kind": 5,
+        "importPath": "week8.exp.gmm",
+        "description": "week8.exp.gmm",
+        "peekOfCode": "scatter = plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=30, edgecolor='k', alpha=0.7)\nplt.colorbar(scatter, label='Cluster')\nplt.xlabel('Feature 1')\nplt.ylabel('Feature 2')\nplt.title(\"Gaussian Mixture Model Clustering with Soft Labels\")\nplt.show()",
+        "detail": "week8.exp.gmm",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week8.exp.marketBasket",
+        "description": "week8.exp.marketBasket",
+        "peekOfCode": "data = {\n    'transaction_id': [1, 1, 2, 2, 3, 3, 3, 4, 5, 5],\n    'item': ['apple', 'banana', 'apple', 'milk', 'banana', 'milk', 'bread', 'milk', 'apple', 'bread']\n}\ndf = pd.DataFrame(data)\n# Pivot data till one-hot encoded format, varje transaction som en rad, items som kolumner\nbasket = df.pivot_table(index='transaction_id', columns='item', aggfunc=lambda x: 1, fill_value=0)\n# Applicera Apriori för att hitta frequent itemsets med minimum support 0.3\nfrequent_itemsets = apriori(basket, min_support=0.3, use_colnames=True)\nprint(\"Frequent Itemsets:\\n\", frequent_itemsets)",
+        "detail": "week8.exp.marketBasket",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week8.exp.marketBasket",
+        "description": "week8.exp.marketBasket",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Pivot data till one-hot encoded format, varje transaction som en rad, items som kolumner\nbasket = df.pivot_table(index='transaction_id', columns='item', aggfunc=lambda x: 1, fill_value=0)\n# Applicera Apriori för att hitta frequent itemsets med minimum support 0.3\nfrequent_itemsets = apriori(basket, min_support=0.3, use_colnames=True)\nprint(\"Frequent Itemsets:\\n\", frequent_itemsets)\n# Generera association rules med minimum confidence 0.5\nrules = association_rules(frequent_itemsets, metric=\"confidence\", min_threshold=0.5)\nprint(\"\\nAssociation Rules:\\n\", rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])",
+        "detail": "week8.exp.marketBasket",
+        "documentation": {}
+    },
+    {
+        "label": "basket",
+        "kind": 5,
+        "importPath": "week8.exp.marketBasket",
+        "description": "week8.exp.marketBasket",
+        "peekOfCode": "basket = df.pivot_table(index='transaction_id', columns='item', aggfunc=lambda x: 1, fill_value=0)\n# Applicera Apriori för att hitta frequent itemsets med minimum support 0.3\nfrequent_itemsets = apriori(basket, min_support=0.3, use_colnames=True)\nprint(\"Frequent Itemsets:\\n\", frequent_itemsets)\n# Generera association rules med minimum confidence 0.5\nrules = association_rules(frequent_itemsets, metric=\"confidence\", min_threshold=0.5)\nprint(\"\\nAssociation Rules:\\n\", rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])",
+        "detail": "week8.exp.marketBasket",
+        "documentation": {}
+    },
+    {
+        "label": "frequent_itemsets",
+        "kind": 5,
+        "importPath": "week8.exp.marketBasket",
+        "description": "week8.exp.marketBasket",
+        "peekOfCode": "frequent_itemsets = apriori(basket, min_support=0.3, use_colnames=True)\nprint(\"Frequent Itemsets:\\n\", frequent_itemsets)\n# Generera association rules med minimum confidence 0.5\nrules = association_rules(frequent_itemsets, metric=\"confidence\", min_threshold=0.5)\nprint(\"\\nAssociation Rules:\\n\", rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])",
+        "detail": "week8.exp.marketBasket",
+        "documentation": {}
+    },
+    {
+        "label": "rules",
+        "kind": 5,
+        "importPath": "week8.exp.marketBasket",
+        "description": "week8.exp.marketBasket",
+        "peekOfCode": "rules = association_rules(frequent_itemsets, metric=\"confidence\", min_threshold=0.5)\nprint(\"\\nAssociation Rules:\\n\", rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])",
+        "detail": "week8.exp.marketBasket",
         "documentation": {}
     },
     {
