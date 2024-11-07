@@ -66,6 +66,30 @@
         "documentation": {}
     },
     {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
         "label": "ColumnTransformer",
         "importPath": "sklearn.compose",
         "description": "sklearn.compose",
@@ -190,6 +214,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "Librarian",
         "importPath": "users",
         "description": "users",
@@ -304,6 +336,14 @@
         "documentation": {}
     },
     {
+        "label": "load_model",
+        "importPath": "tensorflow.keras.models",
+        "description": "tensorflow.keras.models",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.models",
+        "documentation": {}
+    },
+    {
         "label": "ImageDataGenerator",
         "importPath": "tensorflow.keras.preprocessing.image",
         "description": "tensorflow.keras.preprocessing.image",
@@ -401,6 +441,22 @@
         "documentation": {}
     },
     {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
         "label": "make_blobs",
         "importPath": "sklearn.datasets",
         "description": "sklearn.datasets",
@@ -440,6 +496,155 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "dendrogram",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "linkage",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "fcluster",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "h5py",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "h5py",
+        "description": "h5py",
+        "detail": "h5py",
         "documentation": {}
     },
     {
@@ -2231,6 +2436,150 @@
         "description": "week6.project",
         "peekOfCode": "numerical_columns = ['Year', 'Selling_Price', 'Kms_Driven']\nfor col in numerical_columns:\n    q1 = df[col].quantile(0.25)\n    q3 = df[col].quantile(0.75)\n    iqr = q3 - q1\n    lower_bound = q1 - 1.5 * iqr\n    upper_bound = q3 + 1.5 * iqr\n    outliers = df[(df[col] < lower_bound) | (df[col] > upper_bound)][col]\n    print(f\"\\nOutliers in {col}:\")\n    print(f\"Number of outliers: {len(outliers)}\")",
         "detail": "week6.project",
+        "documentation": {}
+    },
+    {
+        "label": "ModelManager",
+        "kind": 6,
+        "importPath": "week8.hierarchicClustering",
+        "description": "week8.hierarchicClustering",
+        "peekOfCode": "class ModelManager:\n    \"\"\"\n    Klass för att hantera sparning och laddning av olika modelltyper.\n    \"\"\"\n    def __init__(self, base_path: str = \"models\"):\n        self.base_path = base_path\n        os.makedirs(base_path, exist_ok=True)\n    def save_model(self, model: any, model_name: str, model_type: str):\n        \"\"\"\n        Sparar en modell i lämpligt format baserat på typ.",
+        "detail": "week8.hierarchicClustering",
+        "documentation": {}
+    },
+    {
+        "label": "HierarchicalClusterAnalyzer",
+        "kind": 6,
+        "importPath": "week8.hierarchicClustering",
+        "description": "week8.hierarchicClustering",
+        "peekOfCode": "class HierarchicalClusterAnalyzer:\n    \"\"\"\n    Klass för hierarkisk klustringsanalys med olika visualiseringsmetoder.\n    En s.k. \"bottom-up\", eller agglomerativ klustring, där vi utnyttjar en linkage-metod, default är 'Ward's linkage'. Euklidiskt avstånd.\n    \"\"\"\n    def __init__(self):\n        self.linkage_matrix = None\n        self.labels = None\n        self.scaler = StandardScaler()\n    def fit(self, data: np.ndarray, method: str = 'ward', metric: str = 'euclidean'):",
+        "detail": "week8.hierarchicClustering",
+        "documentation": {}
+    },
+    {
+        "label": "RecommenderSystem",
+        "kind": 6,
+        "importPath": "week8.hierarchicClustering",
+        "description": "week8.hierarchicClustering",
+        "peekOfCode": "class RecommenderSystem:\n    \"\"\"\n    Enkel rekommendationsmotor baserad på item-item likhet.\n    Generarar likhetsbaserade item recommendations baserat på en matris av user-item ratings.\n    \"\"\"\n    def __init__(self):\n        self.item_similarity_matrix = None\n        self.items_df = None\n        self.scaler = MinMaxScaler()\n    def fit(self, ratings_matrix: pd.DataFrame):",
+        "detail": "week8.hierarchicClustering",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "week8.hierarchicClustering",
+        "description": "week8.hierarchicClustering",
+        "peekOfCode": "def main():\n    \"\"\"\n    Huvudfunktion som demonstrerar användning av klasserna.\n    \"\"\"\n    # Skapa exempel-data för hierarkisk klustring\n    np.random.seed(42)\n    n_samples = 150\n    # Generera tre distinkta grupper av data\n    group1 = np.random.normal(loc=[0, 0], scale=0.3, size=(n_samples//3, 2))\n    group2 = np.random.normal(loc=[2, 2], scale=0.3, size=(n_samples//3, 2))",
+        "detail": "week8.hierarchicClustering",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "week8.hierarchicClustering",
+        "description": "week8.hierarchicClustering",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass ModelManager:\n    \"\"\"\n    Klass för att hantera sparning och laddning av olika modelltyper.\n    \"\"\"\n    def __init__(self, base_path: str = \"models\"):\n        self.base_path = base_path\n        os.makedirs(base_path, exist_ok=True)\n    def save_model(self, model: any, model_name: str, model_type: str):\n        \"\"\"",
+        "detail": "week8.hierarchicClustering",
+        "documentation": {}
+    },
+    {
+        "label": "web_app_sla",
+        "kind": 5,
+        "importPath": "week8.test",
+        "description": "week8.test",
+        "peekOfCode": "web_app_sla = 0.9995\nsql_db_sla = 0.9999\nblob_storage_sla = 0.999\nlogic_app_sla = 0.999\n# Calculate the composite SLA by multiplying individual SLAs\ncomposite_sla = web_app_sla * sql_db_sla * blob_storage_sla * logic_app_sla\ncomposite_sla_percentage = composite_sla * 100  # Convert to percentage\nprint(composite_sla_percentage)",
+        "detail": "week8.test",
+        "documentation": {}
+    },
+    {
+        "label": "sql_db_sla",
+        "kind": 5,
+        "importPath": "week8.test",
+        "description": "week8.test",
+        "peekOfCode": "sql_db_sla = 0.9999\nblob_storage_sla = 0.999\nlogic_app_sla = 0.999\n# Calculate the composite SLA by multiplying individual SLAs\ncomposite_sla = web_app_sla * sql_db_sla * blob_storage_sla * logic_app_sla\ncomposite_sla_percentage = composite_sla * 100  # Convert to percentage\nprint(composite_sla_percentage)",
+        "detail": "week8.test",
+        "documentation": {}
+    },
+    {
+        "label": "blob_storage_sla",
+        "kind": 5,
+        "importPath": "week8.test",
+        "description": "week8.test",
+        "peekOfCode": "blob_storage_sla = 0.999\nlogic_app_sla = 0.999\n# Calculate the composite SLA by multiplying individual SLAs\ncomposite_sla = web_app_sla * sql_db_sla * blob_storage_sla * logic_app_sla\ncomposite_sla_percentage = composite_sla * 100  # Convert to percentage\nprint(composite_sla_percentage)",
+        "detail": "week8.test",
+        "documentation": {}
+    },
+    {
+        "label": "logic_app_sla",
+        "kind": 5,
+        "importPath": "week8.test",
+        "description": "week8.test",
+        "peekOfCode": "logic_app_sla = 0.999\n# Calculate the composite SLA by multiplying individual SLAs\ncomposite_sla = web_app_sla * sql_db_sla * blob_storage_sla * logic_app_sla\ncomposite_sla_percentage = composite_sla * 100  # Convert to percentage\nprint(composite_sla_percentage)",
+        "detail": "week8.test",
+        "documentation": {}
+    },
+    {
+        "label": "composite_sla",
+        "kind": 5,
+        "importPath": "week8.test",
+        "description": "week8.test",
+        "peekOfCode": "composite_sla = web_app_sla * sql_db_sla * blob_storage_sla * logic_app_sla\ncomposite_sla_percentage = composite_sla * 100  # Convert to percentage\nprint(composite_sla_percentage)",
+        "detail": "week8.test",
+        "documentation": {}
+    },
+    {
+        "label": "composite_sla_percentage",
+        "kind": 5,
+        "importPath": "week8.test",
+        "description": "week8.test",
+        "peekOfCode": "composite_sla_percentage = composite_sla * 100  # Convert to percentage\nprint(composite_sla_percentage)",
+        "detail": "week8.test",
+        "documentation": {}
+    },
+    {
+        "label": "DataPreprocessor",
+        "kind": 6,
+        "importPath": "week8.unsupervisedAI",
+        "description": "week8.unsupervisedAI",
+        "peekOfCode": "class DataPreprocessor:\n    def __init__(self):\n        self.scaler = StandardScaler()\n        self.pca = None\n    def prepare_data(self, data: pd.DataFrame) -> np.ndarray:\n        '''\n        Förbereder data genom att hantera saknade värden och standardisera\n        '''\n        # Saknde värden\n        data_cleaned = data.fillna(data.mean())",
+        "detail": "week8.unsupervisedAI",
+        "documentation": {}
+    },
+    {
+        "label": "KMeansAnalyzer",
+        "kind": 6,
+        "importPath": "week8.unsupervisedAI",
+        "description": "week8.unsupervisedAI",
+        "peekOfCode": "class KMeansAnalyzer:\n    '''\n    Klass för att utföra K-means clustering och analysera resultat\n    K-means antar att att kluster är sfäriska och har ungefär samma densitet (kompakthet) och varians.\n    Särskilt bra om vi vet det förvaften antalet kluster.\n    Försöker minimera summan av kvadrerade avstånd (sum of squared distances) inom varje kluster.\n    Hanterar komplexa och oregelbundna klusterformer mindre bra.\n    Hanterar outliers mindre bra, leder till oregelbundna klusterformer och sãoligt positionerade centroider.\n    Eftersom K-means kräver att vi vet antalet kluster vi vill dela upp datapunkterna i, försöker vi först hitta ett optimalt antal kluster.\n    '''",
+        "detail": "week8.unsupervisedAI",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCANAnalyzer",
+        "kind": 6,
+        "importPath": "week8.unsupervisedAI",
+        "description": "week8.unsupervisedAI",
+        "peekOfCode": "class DBSCANAnalyzer:\n    '''\n    Klass för att utföra DBSCAN för oregelbundna former (Density-Based Spatial Clustering of Applications with Noise).\n    Bra för kuster som inte nödvändigtvis är sfäriskt formade.\n    Hittar kluster baserat på densitet, identifierar punkter som har ett minimalt antal grann-punkter (neighboring points)\n    inom ett specificerat avstånd (epsilon).\n    DBSCAN behöver inte veta antalet kluster, men kräver paremeters eps (epsilon) och min_samples (minsta antalet punkter i ett \"neighborhood\" för att skapa en \"dense region\").\n    DBSCAN kan identifiera \"noise points\", punkter som inte tillhör något kluster. Hanterarält outlier bättre föran K-means.\n    '''\n    def __init__(self):",
+        "detail": "week8.unsupervisedAI",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "week8.unsupervisedAI",
+        "description": "week8.unsupervisedAI",
+        "peekOfCode": "def main():\n    '''\n    Huvudfunktion\n    '''\n    # Skapar syntetisk data för demo\n    np.random.seed(42)\n    # Generera tre kluster med olika former\n    n_samples = 300\n    # Första kluster: cirkulärt\n    cluster1 = np.random.normal(loc=[2, 2], scale=0.5, size=(n_samples//3, 2))",
+        "detail": "week8.unsupervisedAI",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "week8.unsupervisedAI",
+        "description": "week8.unsupervisedAI",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass DataPreprocessor:\n    def __init__(self):\n        self.scaler = StandardScaler()\n        self.pca = None\n    def prepare_data(self, data: pd.DataFrame) -> np.ndarray:\n        '''\n        Förbereder data genom att hantera saknade värden och standardisera\n        '''\n        # Saknde värden",
+        "detail": "week8.unsupervisedAI",
         "documentation": {}
     }
 ]
