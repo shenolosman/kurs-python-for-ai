@@ -131,12 +131,178 @@
         "documentation": {}
     },
     {
+        "label": "GPT2LMHeadModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "GPT2Tokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision.transforms",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision.transforms",
+        "description": "torchvision.transforms",
+        "detail": "torchvision.transforms",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "layers",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "layers",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "tensorflow.keras",
+        "description": "tensorflow.keras",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Flatten",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Flatten",
+        "importPath": "tensorflow.keras.layers",
+        "description": "tensorflow.keras.layers",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.layers",
+        "documentation": {}
+    },
+    {
         "label": "matplotlib.pyplot",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "make_blobs",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "make_blobs",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_digits",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
         "documentation": {}
     },
     {
@@ -247,47 +413,6 @@
         "documentation": {}
     },
     {
-        "label": "tensorflow",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "tensorflow",
-        "description": "tensorflow",
-        "detail": "tensorflow",
-        "documentation": {}
-    },
-    {
-        "label": "layers",
-        "importPath": "tensorflow.keras",
-        "description": "tensorflow.keras",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "tensorflow.keras",
-        "description": "tensorflow.keras",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras",
-        "documentation": {}
-    },
-    {
-        "label": "layers",
-        "importPath": "tensorflow.keras",
-        "description": "tensorflow.keras",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "tensorflow.keras",
-        "description": "tensorflow.keras",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras",
-        "documentation": {}
-    },
-    {
         "label": "cifar10",
         "importPath": "tensorflow.keras.datasets",
         "description": "tensorflow.keras.datasets",
@@ -309,22 +434,6 @@
         "description": "tensorflow.keras.applications",
         "isExtraImport": true,
         "detail": "tensorflow.keras.applications",
-        "documentation": {}
-    },
-    {
-        "label": "Dense",
-        "importPath": "tensorflow.keras.layers",
-        "description": "tensorflow.keras.layers",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.layers",
-        "documentation": {}
-    },
-    {
-        "label": "Flatten",
-        "importPath": "tensorflow.keras.layers",
-        "description": "tensorflow.keras.layers",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.layers",
         "documentation": {}
     },
     {
@@ -454,22 +563,6 @@
         "description": "sklearn.cluster",
         "isExtraImport": true,
         "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "make_blobs",
-        "importPath": "sklearn.datasets",
-        "description": "sklearn.datasets",
-        "isExtraImport": true,
-        "detail": "sklearn.datasets",
-        "documentation": {}
-    },
-    {
-        "label": "load_digits",
-        "importPath": "sklearn.datasets",
-        "description": "sklearn.datasets",
-        "isExtraImport": true,
-        "detail": "sklearn.datasets",
         "documentation": {}
     },
     {
@@ -1036,6 +1129,267 @@
         "description": "week1.intro",
         "peekOfCode": "a_squared = squared(a)\nprint(f\"{a} squared is: {a_squared}\")\n# Enumerate\nfor index, number in enumerate(my_numbers): # enumare() parar ihop varje element i listan med ett index\n    number_squared = squared(number)\n    print(f\"{number} on index {index} is: {number_squared}\")",
         "detail": "week1.intro",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "week10.gpt2TextGen",
+        "description": "week10.gpt2TextGen",
+        "peekOfCode": "tokenizer = GPT2Tokenizer.from_pretrained(\"gpt2\")\nmodel = GPT2LMHeadModel.from_pretrained(\"gpt2\")\n# Generate text\ninput_text = \"Once upon a time in a fantasy world,\"\ninput_ids = tokenizer.encode(input_text, return_tensors='pt')\noutput = model.generate(input_ids, max_length=100, num_return_sequences=1)\ngenerated_text = tokenizer.decode(output[0], skip_special_tokens=True)\nprint(generated_text)",
+        "detail": "week10.gpt2TextGen",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week10.gpt2TextGen",
+        "description": "week10.gpt2TextGen",
+        "peekOfCode": "model = GPT2LMHeadModel.from_pretrained(\"gpt2\")\n# Generate text\ninput_text = \"Once upon a time in a fantasy world,\"\ninput_ids = tokenizer.encode(input_text, return_tensors='pt')\noutput = model.generate(input_ids, max_length=100, num_return_sequences=1)\ngenerated_text = tokenizer.decode(output[0], skip_special_tokens=True)\nprint(generated_text)",
+        "detail": "week10.gpt2TextGen",
+        "documentation": {}
+    },
+    {
+        "label": "input_text",
+        "kind": 5,
+        "importPath": "week10.gpt2TextGen",
+        "description": "week10.gpt2TextGen",
+        "peekOfCode": "input_text = \"Once upon a time in a fantasy world,\"\ninput_ids = tokenizer.encode(input_text, return_tensors='pt')\noutput = model.generate(input_ids, max_length=100, num_return_sequences=1)\ngenerated_text = tokenizer.decode(output[0], skip_special_tokens=True)\nprint(generated_text)",
+        "detail": "week10.gpt2TextGen",
+        "documentation": {}
+    },
+    {
+        "label": "input_ids",
+        "kind": 5,
+        "importPath": "week10.gpt2TextGen",
+        "description": "week10.gpt2TextGen",
+        "peekOfCode": "input_ids = tokenizer.encode(input_text, return_tensors='pt')\noutput = model.generate(input_ids, max_length=100, num_return_sequences=1)\ngenerated_text = tokenizer.decode(output[0], skip_special_tokens=True)\nprint(generated_text)",
+        "detail": "week10.gpt2TextGen",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "week10.gpt2TextGen",
+        "description": "week10.gpt2TextGen",
+        "peekOfCode": "output = model.generate(input_ids, max_length=100, num_return_sequences=1)\ngenerated_text = tokenizer.decode(output[0], skip_special_tokens=True)\nprint(generated_text)",
+        "detail": "week10.gpt2TextGen",
+        "documentation": {}
+    },
+    {
+        "label": "generated_text",
+        "kind": 5,
+        "importPath": "week10.gpt2TextGen",
+        "description": "week10.gpt2TextGen",
+        "peekOfCode": "generated_text = tokenizer.decode(output[0], skip_special_tokens=True)\nprint(generated_text)",
+        "detail": "week10.gpt2TextGen",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleCNN",
+        "kind": 6,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "class SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 16, 3)  # Input: 3 channels (RGB), Output: 16 filters\n        self.fc1 = nn.Linear(16 * 30 * 30, 10)  # Adjust input size based on conv layer output\n    def forward(self, x):\n        x = torch.relu(self.conv1(x))\n        x = x.view(-1, 16 * 30 * 30)  # Flatten for FC layer\n        x = self.fc1(x)\n        return x",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "transform",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])\ntrainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)\ntrainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True)\ntestset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)\ntestloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False)\n# Define model\nclass SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 16, 3)  # Input: 3 channels (RGB), Output: 16 filters",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "trainset",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)\ntrainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True)\ntestset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)\ntestloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False)\n# Define model\nclass SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 16, 3)  # Input: 3 channels (RGB), Output: 16 filters\n        self.fc1 = nn.Linear(16 * 30 * 30, 10)  # Adjust input size based on conv layer output",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "trainloader",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "trainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True)\ntestset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)\ntestloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False)\n# Define model\nclass SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 16, 3)  # Input: 3 channels (RGB), Output: 16 filters\n        self.fc1 = nn.Linear(16 * 30 * 30, 10)  # Adjust input size based on conv layer output\n    def forward(self, x):",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "testset",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)\ntestloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False)\n# Define model\nclass SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 16, 3)  # Input: 3 channels (RGB), Output: 16 filters\n        self.fc1 = nn.Linear(16 * 30 * 30, 10)  # Adjust input size based on conv layer output\n    def forward(self, x):\n        x = torch.relu(self.conv1(x))",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "testloader",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False)\n# Define model\nclass SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 16, 3)  # Input: 3 channels (RGB), Output: 16 filters\n        self.fc1 = nn.Linear(16 * 30 * 30, 10)  # Adjust input size based on conv layer output\n    def forward(self, x):\n        x = torch.relu(self.conv1(x))\n        x = x.view(-1, 16 * 30 * 30)  # Flatten for FC layer",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "model = SimpleCNN()\ncriterion = nn.CrossEntropyLoss()\noptimizer = optim.Adam(model.parameters(), lr=0.001)\n# Train model\nfor epoch in range(5):\n    for inputs, labels in trainloader:\n        optimizer.zero_grad()\n        outputs = model(inputs)\n        loss = criterion(outputs, labels)\n        loss.backward()",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "criterion = nn.CrossEntropyLoss()\noptimizer = optim.Adam(model.parameters(), lr=0.001)\n# Train model\nfor epoch in range(5):\n    for inputs, labels in trainloader:\n        optimizer.zero_grad()\n        outputs = model(inputs)\n        loss = criterion(outputs, labels)\n        loss.backward()\n        optimizer.step()",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "week10.imagesPyTorch",
+        "description": "week10.imagesPyTorch",
+        "peekOfCode": "optimizer = optim.Adam(model.parameters(), lr=0.001)\n# Train model\nfor epoch in range(5):\n    for inputs, labels in trainloader:\n        optimizer.zero_grad()\n        outputs = model(inputs)\n        loss = criterion(outputs, labels)\n        loss.backward()\n        optimizer.step()\n# Test model",
+        "detail": "week10.imagesPyTorch",
+        "documentation": {}
+    },
+    {
+        "label": "sigmoid",
+        "kind": 2,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "def sigmoid(x):\n    return 1 / (1 + np.exp(-x))\ndef sigmoid_derivative(x):\n    return x * (1 - x)\n# Training data (X: input, y: output)\nX = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  # XOR inputs\ny = np.array([[0], [1], [1], [0]])              # XOR outputs\n# Initialize weights and biases\nnp.random.seed(0)\nweights_input_hidden = np.random.rand(2, 2)  # 2 input nodes, 2 hidden nodes",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "sigmoid_derivative",
+        "kind": 2,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "def sigmoid_derivative(x):\n    return x * (1 - x)\n# Training data (X: input, y: output)\nX = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  # XOR inputs\ny = np.array([[0], [1], [1], [0]])              # XOR outputs\n# Initialize weights and biases\nnp.random.seed(0)\nweights_input_hidden = np.random.rand(2, 2)  # 2 input nodes, 2 hidden nodes\nweights_hidden_output = np.random.rand(2, 1) # 2 hidden nodes, 1 output node\nbias_hidden = np.random.rand(1, 2)",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  # XOR inputs\ny = np.array([[0], [1], [1], [0]])              # XOR outputs\n# Initialize weights and biases\nnp.random.seed(0)\nweights_input_hidden = np.random.rand(2, 2)  # 2 input nodes, 2 hidden nodes\nweights_hidden_output = np.random.rand(2, 1) # 2 hidden nodes, 1 output node\nbias_hidden = np.random.rand(1, 2)\nbias_output = np.random.rand(1, 1)\nlearning_rate = 0.1\n# Training loop",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "y = np.array([[0], [1], [1], [0]])              # XOR outputs\n# Initialize weights and biases\nnp.random.seed(0)\nweights_input_hidden = np.random.rand(2, 2)  # 2 input nodes, 2 hidden nodes\nweights_hidden_output = np.random.rand(2, 1) # 2 hidden nodes, 1 output node\nbias_hidden = np.random.rand(1, 2)\nbias_output = np.random.rand(1, 1)\nlearning_rate = 0.1\n# Training loop\nfor epoch in range(10000):",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "weights_input_hidden",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "weights_input_hidden = np.random.rand(2, 2)  # 2 input nodes, 2 hidden nodes\nweights_hidden_output = np.random.rand(2, 1) # 2 hidden nodes, 1 output node\nbias_hidden = np.random.rand(1, 2)\nbias_output = np.random.rand(1, 1)\nlearning_rate = 0.1\n# Training loop\nfor epoch in range(10000):\n    # Forward pass\n    hidden_layer_input = np.dot(X, weights_input_hidden) + bias_hidden\n    hidden_layer_output = sigmoid(hidden_layer_input)",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "weights_hidden_output",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "weights_hidden_output = np.random.rand(2, 1) # 2 hidden nodes, 1 output node\nbias_hidden = np.random.rand(1, 2)\nbias_output = np.random.rand(1, 1)\nlearning_rate = 0.1\n# Training loop\nfor epoch in range(10000):\n    # Forward pass\n    hidden_layer_input = np.dot(X, weights_input_hidden) + bias_hidden\n    hidden_layer_output = sigmoid(hidden_layer_input)\n    output_layer_input = np.dot(hidden_layer_output, weights_hidden_output) + bias_output",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "bias_hidden",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "bias_hidden = np.random.rand(1, 2)\nbias_output = np.random.rand(1, 1)\nlearning_rate = 0.1\n# Training loop\nfor epoch in range(10000):\n    # Forward pass\n    hidden_layer_input = np.dot(X, weights_input_hidden) + bias_hidden\n    hidden_layer_output = sigmoid(hidden_layer_input)\n    output_layer_input = np.dot(hidden_layer_output, weights_hidden_output) + bias_output\n    predicted_output = sigmoid(output_layer_input)",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "bias_output",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "bias_output = np.random.rand(1, 1)\nlearning_rate = 0.1\n# Training loop\nfor epoch in range(10000):\n    # Forward pass\n    hidden_layer_input = np.dot(X, weights_input_hidden) + bias_hidden\n    hidden_layer_output = sigmoid(hidden_layer_input)\n    output_layer_input = np.dot(hidden_layer_output, weights_hidden_output) + bias_output\n    predicted_output = sigmoid(output_layer_input)\n    # Compute error",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "learning_rate",
+        "kind": 5,
+        "importPath": "week10.myNN",
+        "description": "week10.myNN",
+        "peekOfCode": "learning_rate = 0.1\n# Training loop\nfor epoch in range(10000):\n    # Forward pass\n    hidden_layer_input = np.dot(X, weights_input_hidden) + bias_hidden\n    hidden_layer_output = sigmoid(hidden_layer_input)\n    output_layer_input = np.dot(hidden_layer_output, weights_hidden_output) + bias_output\n    predicted_output = sigmoid(output_layer_input)\n    # Compute error\n    error = y - predicted_output",
+        "detail": "week10.myNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "week10.ShallowDigitsAI",
+        "description": "week10.ShallowDigitsAI",
+        "peekOfCode": "model = Sequential([\n    Flatten(input_shape=(28, 28)),  # Flatten 2D images to 1D\n    Dense(128, activation='relu'),  # One Hidden Layer\n    Dense(10, activation='softmax')  # Output layer (10 classes)\n])\n# Compile model\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\n# Train model\nmodel.fit(x_train, y_train, epochs=5, validation_split=0.1)\n# Evaluate model",
+        "detail": "week10.ShallowDigitsAI",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "week10.unsupervisedKMeans",
+        "description": "week10.unsupervisedKMeans",
+        "peekOfCode": "k = 3  # Number of clusters\nkmeans = tf.compat.v1.estimator.experimental.KMeans(num_clusters=k, use_mini_batch=False)\n# Input function\ninput_fn = tf.compat.v1.estimator.inputs.numpy_input_fn(x={\"x\": data}, num_epochs=1, shuffle=False)\n# Train model\nkmeans.train(input_fn)\n# Predict cluster assignments\ncluster_assignments = list(kmeans.predict_cluster_index(input_fn))\nprint(\"Cluster assignments:\", cluster_assignments)",
+        "detail": "week10.unsupervisedKMeans",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "week10.unsupervisedKMeans",
+        "description": "week10.unsupervisedKMeans",
+        "peekOfCode": "kmeans = tf.compat.v1.estimator.experimental.KMeans(num_clusters=k, use_mini_batch=False)\n# Input function\ninput_fn = tf.compat.v1.estimator.inputs.numpy_input_fn(x={\"x\": data}, num_epochs=1, shuffle=False)\n# Train model\nkmeans.train(input_fn)\n# Predict cluster assignments\ncluster_assignments = list(kmeans.predict_cluster_index(input_fn))\nprint(\"Cluster assignments:\", cluster_assignments)",
+        "detail": "week10.unsupervisedKMeans",
+        "documentation": {}
+    },
+    {
+        "label": "input_fn",
+        "kind": 5,
+        "importPath": "week10.unsupervisedKMeans",
+        "description": "week10.unsupervisedKMeans",
+        "peekOfCode": "input_fn = tf.compat.v1.estimator.inputs.numpy_input_fn(x={\"x\": data}, num_epochs=1, shuffle=False)\n# Train model\nkmeans.train(input_fn)\n# Predict cluster assignments\ncluster_assignments = list(kmeans.predict_cluster_index(input_fn))\nprint(\"Cluster assignments:\", cluster_assignments)",
+        "detail": "week10.unsupervisedKMeans",
+        "documentation": {}
+    },
+    {
+        "label": "cluster_assignments",
+        "kind": 5,
+        "importPath": "week10.unsupervisedKMeans",
+        "description": "week10.unsupervisedKMeans",
+        "peekOfCode": "cluster_assignments = list(kmeans.predict_cluster_index(input_fn))\nprint(\"Cluster assignments:\", cluster_assignments)",
+        "detail": "week10.unsupervisedKMeans",
         "documentation": {}
     },
     {
